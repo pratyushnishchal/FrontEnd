@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+        .heading{
+            text-align: center;
+        }
+        .input-box{
+            width: 400px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" required placeholder="Enter the name" id="name" name="name" class="input-box"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" required placeholder="Enter the email" id="email" name="email" class="input-box"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" required placeholder="Enter the password" id="pass" name="pass" class="input-box"></td>
+            </tr>
+            <tr>
+                <td><label>Date</label></td>
+                <td><input type="date" required id="dates" name="date1" class="input-box"></td>
+            </tr>
+            <tr>
+                <td><label>Month</label></td>
+                <td><input type="month" required id="mon" name="month" class="input-box"></td>
+            </tr>
+            <tr>
+                <td><label>Color</label></td>
+                <td><input type="color" required id="color" name="color"></td>
+            </tr>
+            <tr>
+                <td><label>file type/image</label></td>
+                <td><input type="file" required id="file" name="file"></td>
+            </tr>
+            <tr>
+                <td><label for="myHobbies">Hobbies</label></td>
+                <td><input type="checkbox" name="myHobbies">Reading
+                <input type="checkbox" name="myHobbies">Playing
+                <input type="checkbox" name="myHobbies">Writting</td>
+            </tr>
+            <tr><td><input type="submit"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

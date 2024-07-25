@@ -1,0 +1,364 @@
+img
+---- 
+--<img>
+--two attributes 
+    1)src --link/filename
+    2)alt --alternate name given to the imag 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>image tag</h3>
+    <h3>Image is getting displayed</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92eisuWOx3tEjeW14mT9ACVgXDwIRBGtnww&s" alt="No-display">
+    <h3>image is not getting displayed</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92eisuWOx3tEjeW14mT9A" alt="No-display">
+    <h3>image using filename</h3>
+    <img src="one.jpg" alt="no-display">
+    <h3>image from different folder</h3>
+    <img src="../classB/one.jpg" alt="no-display">
+</body>
+</html> 
+
+<a>
+----
+--anchor tag <a>
+--atrributes 
+ 1)href 
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>Anchor tag</h3>
+   <h3>using link</h3>
+   <a href="https:www.excelr.com">Excelr</a>
+<h3>using file</h3>
+<a href="b.html">click me</a>
+</body>
+</html>
+what is difference between src and href?
+src--embedded the file or link 
+href--link to external file or link
+what is the difference between inline and block line elements?
+
+--create a webpage where it should have three images with the logs of 1)excelr 2)w3c 3)google 
+and if you click on any this images it should redirect to the respective one 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https:www.w3cshool"><img src="three.png" alt="No-display"><figcaption>w3cschool</figcaption> </a>
+    <a href="https:www.google.com"><img src="four.png" alt="no-display"><figcaption>google</figcaption></a>
+    <a href="https:www.excelr.com"><img src="two.png" alt="no-display"><figcaption>Excelr</figcaption></a>
+</body>
+</html>
+
+<span>
+--inline elemnts 
+-- in order to deal particular value in the given content
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="color: aqua;">Vero</span>  neque eius, reprehenderit cumque ad totam aspernatur velit ipsa laborum maiores sapiente dolore vitae aliquam ea enim in rerum reiciendis necessitatibus.</p>
+</body>
+</html> 
+
+void elements 
+--------------
+--self closing tags 
+--example: <br>,<img>,<hr>
+--non-break spaces
+&nbsp 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem &nbsp;&nbsp; ipsum, dolor sit amet consectetur adipisicing elit. <br>  Nisi voluptas dignissimos iure sequi doloremque minus vero numquam doloribus provident labore neque pariatur fugit recusandae culpa eius, error reiciendis, animi similique.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid aperiam atque fugiat exercitationem accusamus et, excepturi sint sunt consectetur tenetur soluta rem, impedit fuga quisquam doloribus, distinctio repellat nostrum.</p>
+</body>
+</html> 
+
+block inline elements 
+----------------------
+--elements that will occupy the complete line for its contents 
+--whatever you add using block line elements it will be added in the new line 
+--example:
+<p>
+<pre>
+<h1>
+<li>
+<table>
+<form>
+<video>
+<audio>
+<iframe> 
+<div> 
+
+
+list 
+----
+--understand the arrangement 
+--<li> 
+1)ordered list 
+2)unordered list 
+3)description list  
+
+1)ordered list 
+--<ol>
+--here we will have sequence.in order to follow the sequence numbers,alphabets,roman numbers 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>lists</h3>
+    <h3>ordered list</h3>
+    <ol>
+        <li>java</li>
+        <li>jdbc</li>
+        <li>j2ee</li>
+        <li>hibernet</li>
+        <li>springboot
+
+        </li>
+    </ol>
+    <h3>alphabets</h3>
+    <ol type="a">
+        <li>java</li>
+        <li>jdbc</li>
+        <li>j2ee</li>
+        <li>hibernet</li>
+        <li>springboot
+            
+        </li>
+    </ol>
+    <h3>roman numbers</h3>
+    <ol type="i">
+        <li>java</li>
+        <li>jdbc</li>
+        <li>j2ee</li>
+        <li>hibernet</li>
+        <li>springboot
+            
+        </li>
+    </ol>
+    <h3>caps</h3>
+    <ol type="A">
+        <li>java</li>
+        <li>jdbc</li>
+        <li>j2ee</li>
+        <li>hibernet</li>
+        <li>springboot
+            
+        </li>
+    </ol>
+    <h3>reverse numbers</h3>
+    <ol type="1" reversed>
+        <li>java</li>
+        <li>jdbc</li>
+        <li>j2ee</li>
+        <li>hibernet</li>
+        <li>springboot
+            
+        </li>
+    </ol>
+</body>
+</html>
+
+2)unordered list 
+--<ul> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>lists</h3>
+    <h3>unordred list</h3>
+   <ul>
+    <li>java</li>
+    <li>j2ee</li>
+    <li>hibernate</li>
+    <li>jdbc</li>
+   </ul>
+   <ul style="list-style: square;fill: none;">
+    <li>java</li>
+    <li>j2ee</li>
+    <li>hibernate</li>
+    <li>jdbc</li>
+   </ul>
+   <ul type="circle">
+    <li>java</li>
+    <li>j2ee</li>
+    <li>hibernate</li>
+    <li>jdbc</li>
+   </ul>
+</body>
+</html> 
+
+3)description list 
+--<dl>
+--key and value 
+1)dt --term
+2)dd --describing your treams
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>lists</h3>
+    <h3>description list </h3>
+    <dl>
+        <dt>html</dt>
+        <dd>hyper text markup language</dd>
+        <dt>css</dt>
+        <dd>cascasde style sheet</dd>
+    </dl>
+</body>
+</html> 
+
+--creating a webpage for designing cake 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Sponge Cake</h2>
+    <h4>Ingredients</h4>
+    <ul>
+        <li>3 eggs</li>
+        <li>100g castor sugar</li>
+        <li>85g self-raising flour</li>
+    </ul>
+    <h4>Notes on ingredients</h4>
+    <dl>
+        <dt>castor Sugar</dt>
+      <dd>Finely granulated white sugar</dd>
+      <dt>self-raising flour</dt>
+      <dd>A pre-mixed combination of flour and leaving agents(usually salt and baking powder)</dd>
+      <h4>Method</h4>
+        <ol>
+            <li> preheat the oven to 190 c </li>
+            
+           
+        </ol>
+    </dl>
+</body>
+</html> 
+
+--table 
+--whenever you want to represnt the data is structurewd way we use table 
+--tags
+<table>-->it is used to create a table
+<tr>-->entering into respective row
+<td>--->entering data into cell
+<th>--->table heading
+<caption>--->it will table name
+<rowspan>--->combining the rows 
+<colspan>--->combinf the cols
+<table border="2px" style="border-collapse: collapse;">
+    <tr>
+        <th>Sl.no</th>
+        <th>Sname</th>
+        <th>Cname</th>
+        <th>Fess</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Karthik</td>
+        <td>FSD</td>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Naresh</td>
+        <td>FSD</td>
+        <td>2000</td>
+    </tr><tr>
+        <td>3</td>
+        <td>pratush</td>
+        <td>FSD</td>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Sachine</td>
+        <td>FSD</td>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Roopesh</td>
+        <td>FSD</td>
+        <td>2000</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Kishan</td>
+        <td>FSD</td>
+        <td>2000</td>
+    </tr>
+</table> 
+
+--create a webpage for table add images and links and if your click on image.image only should diplsya and if you click on the link it should redirct to the respective webpage
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border-collapse: collapse;" border="2px">
+        <tr>
+            <th>sl.no</th>
+            <th>images</th>
+            <th>links</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <a href="b.html"><img src="two.png" alt="no-display" width="100px" height="100px"></a>
+            </td>
+            <td><a href="https:www.excelr.com">Excelr</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <a href="c.html"><img src="three.png" alt="" width="100px" height="100px"></a>
+            </td>
+            <td><a href="https://www.w3schools.com/">w3cschool</a></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,275 @@
+Day1(Introduction to HTML)
+---------------------------
+2hr
+30min--15 min to 20min 
+notes 
+interview  
+ 
+html and css 
+------------
+
+1)Internet 
+--Group of computer connected to network 
+--International network of computer is called as internet 
+
+2)web 
+--www(world wide web)
+--transformation of information 
+http(hyper text transfer protocal)
+https(hyper text transfer protocal secure)
+3)IP address 
+--A unique name given to each and every device 
+that is connected to internet z
+4)domain name 
+www.excelr.com
+5)DNS 
+--domain name service 
+--the connection between ip address and domain name is called DNC
+6)Architechture of client/server 
+
+Html 
+---- 
+1)UX--user experience 
+2)IXD--user interaction 
+3)UI/GUI-Graphical user interface (HTML & CSS)
+UI--User interface 
+HTML 
+----
+who designed?
+--TIM BERNER LEE 
+
+why he designed?
+--to create interesting web page 
+website (we are not)
+webpage 
+server 
+what is html?
+--hyper 
+--text 
+--mark up--A tag that communicates with server to make changes on web page
+--language (A way we communicate) 
+
+(or)
+to structure the webpage
+where to html?
+--notepad 
+--notepad++ 
+--vsc(visual studio code)
+how to write html?
+Structure of html 
+------------------
+1)root  2)head 3)body 
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
+1)tag 
+--A keyword to used define a content is called as tag 
+syntax:
+<opening tag>content</close tag>
+1)root element 
+--the main element to write the text 
+2)head 
+--it stores meta data 
+--whatever I write it will not display in browser body 
+3)body 
+--what ever you write inside the body tag will be seen on browser body 
+
+---whenever you rite the file it will end with extension .html
+
+<html>
+<head>
+<title>Akshatha</title> 
+</head>
+<body>
+<p>hey</p>
+</body>
+</html>
+
+short-cut-key 
+doc+tab
+shift+1-->!-->enter
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+shift+1-->!-->enter
+-------------------
+<!DOCTYPE html>--->it will version name to the broswer 
+<html lang="en">-->it will say a browser to use language to understand
+<head>--->it meta information 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+head 
+----
+1)meta 
+what is meta tag?
+--it will display page information 
+UTF (unicode tranform formate)
+UTF-8/UTF-16
+--encode (binary data it will convert into character)
+--decode (charater to binary)
+
+--along with this viewport we have decsrition,links,images(icons)
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+2)title 
+--it will give title of the webpage 
+3)script
+1)tag 
+2)attribute
+--it will add more information to the tag 
+<script src="filename">
+filename.js 
+--script tag is used for external connection of javascript  
+4)style 
+--internal css 
+5)noscript 
+--css +js and when your browser doesnt support it then when we are going to user noscript 
+6)base 
+--absolute link 
+7)head 
+8)link 
+3)<body>
+1)<p>
+--paragrap tag 
+1)represntation of tag 
+<p>content</p>
+2)unwanted spaces it will ignore 
+3)unwanted lines it will ignore 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>Lorem                                                         ipsum dolor sit amet consectetur, adipisicing elit.
+        
+        
+        
+        
+        Sapiente, excepturi iste. Saepe, possimus atque, asperiores tempora perferendis beatae ducimus, sequi nesciunt voluptatibus commodi quaerat blanditiis architecto consequuntur a cumque sint?</p>
+</body>
+</html>
+2)<pre>
+--represented 
+<pre>content<pre>
+--unwated spaces
+--unwanted lines 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <pre>Lorem                                                         ipsum dolor sit amet consectetur, adipisicing elit.
+        
+        
+        
+        
+        Sapiente, excepturi iste. Saepe, possimus atque, asperiores tempora perferendis beatae ducimus, sequi nesciunt voluptatibus commodi quaerat blanditiis architecto consequuntur a cumque sint?</pre>
+</body>
+</html>
+3)heading tags 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+    <style>
+
+    </style>
+</head>
+<body>
+   
+<h1>hello</h1>
+<h2>hello</h2>
+<h3>hello</h3>
+<h4>hello</h4>
+<h5>hello</h5>
+<h6>hello</h6>
+<h7>hello</h7>
+
+</body>
+</html>
+<h1>,<h2>,<h3>,<h4>,<h5>,<h6> 
+--using h1 to h6 heading tag and use p and pre design one webpage
+
+
+to run the code---alt+l+o
+1)tags 
+2)attribute 
+3)elements 
+--tags+atrribute 
+    1)void elements
+    2)inline elements 
+    3)block line elements
+    4)special character
+    --it will take width of content 
+    formatting the tag 
+    ------------------
+    1)sup 
+    2)sub 
+    3)b 
+    4)i 
+    5)strong 
+    6)emp 
+    7)del  
+    8)mark  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>inline elements</h1>
+    <h1>formatting tag </h1>
+    <p>it will <i>take</i> width of the content and it will take the same line</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Iste, quas sit at ipsum veniam sunt iure vero praesentium. <del>Enim </del>iusto quibusdam reprehenderit placeat debitis magni incidunt ipsum voluptatem. Sit, animi!
+         11<sup> th</sup><mark> akshath</mark>
+         <sub>a</sub>
+        <abbr title="hyper text markup language">html</abbr>
+    </p>
+</body>
+</html>
+1)<img>
+--atributes 
+
+--write a script create two folder folder1 and folder2.infolder1 image should be saved and write the sciprt in folder2 and genrate the imgae
+1)src=""
+2)alt-->aletrnate name
+    2)block line elemnts 
+    3)speical elements 
+
+
+
+
