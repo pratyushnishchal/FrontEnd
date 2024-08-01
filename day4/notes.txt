@@ -1,0 +1,273 @@
+recap
+-----
+table 
+--structuring of the data 
+--<table>
+<tr>--table row 
+<th>--table header 
+<td>--table data 
+<caption>--giving the name for table 
+<rowpsan>--combination one or more rows 
+<colspan>--combination of one or more col 
+
+form 
+----
+--two attribute 
+1)action 
+2)method 
+    1)get 
+    2)post 
+
+elements 
+1)<label> 
+for 
+2)input 
+3)checkbox,radio and select 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>checkbox</h4>
+    <form action="">
+        <label for="cb">hobbies</label><br>
+        <input type="checkbox" name="cb">
+        <label for="">Reading</label><br>
+
+        <input type="checkbox" name="cb">
+        <label for="">writting</label><br>
+
+        <input type="checkbox" name="cb">
+        <label for="">dancing</label><br>
+
+        <h4>Radio button</h4>
+        <label for="rb">course</label><br>
+        <input type="radio" name="rb">
+        <label for="">Fullstack</label><br>
+
+        <input type="radio" name="rb">
+        <label for="">Data science</label><br>
+
+        <input type="radio" name="rb">
+        <label for="">AWS</label><br> 
+
+        <h4>Another element  of form i.e select</h4>
+        <label for="s">cars</label>
+        <select name="s" id="demo">
+            <option value="">i20</option>
+            <option value="">Breeza</option>
+            <option value="">Ford</option>
+            <option value="">Audi</option>
+        </select><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
+3)textarea 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">comments</label>
+        <textarea name="" id="" rows="60" cols="40"></textarea>
+    </form>
+</body>
+</html>
+4)select 
+5)options 
+6)fieldset 
+7)legend 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form action="">
+        <fieldset style="width: 20px;">
+            <legend>Students information</legend>
+       <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>course</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+        </tr>
+       </table>
+    </fieldset>
+    </form>
+</center>
+</body>
+</html> 
+
+project 
+--------
+--design a webpage for insta login page 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #parent{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div id="parent">
+    <div id="one">
+        <img src="one.png" alt="" width="100px">
+    </div>
+   <div id="two">
+    <center>
+    <form action="">
+        <fieldset style="width: 20px;">
+        <table>
+            <tr>
+               <h3 style="font-family:sans-serif;">Instagram</h3>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Phone number,username,or email" style="width:250px"></td>
+                
+            </tr> 
+    
+            <tr>
+                <td><input type="password" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td> ------------------or------------------------</td>
+            </tr>
+           
+            <tr>
+                <td style="text-align: center;color: blue;">Log in with Facebook</td>
+            </tr>
+            <tr>
+                
+                <td style="font-size: small;text-align: center;">Forgot password?</td>
+            </tr>
+    
+        </fieldset>
+        <fieldset style="width:20px">
+            <tr>
+                <td style="text-align: center;">Dont have an account?Sign up</td>
+            </tr>
+            
+        </fieldset>
+
+           
+        </table>
+    </center>
+</div>
+</div>
+    
+</form>
+</body>
+</html> 
+
+svg 
+---
+--support vector graphics 
+1)circle 
+2)rectange 
+3)line 
+4)polyline 
+5)polygon  
+
+circle 
+------ 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500px" height="500px">
+        <circle r="50" cx="100" cy="100" fill="blue" stroke="red" stroke-width="10px"></circle>
+    </svg>
+</body>
+</html> 
+rectange/ellipse 
+-----------------
+--width 
+--height 
+x=,y=
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+        <rect width="150" height="300" x="50" y="50" fill="red" stroke="black"></rect>
+    </svg><br><br>
+    <svg width="500" height="500">
+        <rect width="300" height="150" x="50" y="50" fill="red" stroke="black" rx="180" ry="180"></rect>
+    </svg>
+</body>
+</html> 
+
+--draw a circle inside the rectange
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+        <rect width="150" height="150" x="20" y="50"></rect>
+        <circle r="50" cx="90" cy="120" fill="yellow"></circle>
+
+    </svg>
+</body>
+</html>
+
+line
+----
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg>
+        <line x1="10" y1="10" x2="30" y2="10" stroke="black"></line>
+    </svg>
+</body>
+</html> 
+
+polygon 
+-------
+points= 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg>
+        <polygon points="20,10 10,20 30,20" stroke="black" fill="yellow"></polygon>
+    </svg>
+</body>
+</html>
