@@ -1,0 +1,351 @@
+CSS 
+---
+--cascade style sheet 
+--html--structing of webpage 
+css-Design that structure 
+who desgined?
+-Hawkon --1996 
+css1
+--font 
+--background 
+--text colors 
+1998 --css2 
+--positions 
+--improved control over layout 
+--media types 
+css3 
+--flex 
+grid 
+browser interactivity 
+css4 
+--resposnsive designs 
+--animation 
+
+--three Different approaches 
+1)inline 
+2)internal 
+3)external approach 
+
+css anotomy 
+-----------
+inline 
+style="property-name:property value"; 
+
+internal 
+--------
+--i have to use style tag inside the head 
+<style>
+{
+    property-name:propety-value 
+}//declaration 
+</style>
+
+external 
+--------
+<link>
+--atrributes 
+1)rel ="relation" stylesheet 
+2)href--link from one place to another 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>inline css </h1>
+    <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat excepturi, corporis, dolorum vero, aperiam fuga aut nam ut quod quis numquam nihil nisi quos. Voluptatum similique sed nobis consequuntur iusto.</p>
+</body>
+</html> 
+
+internal 
+--------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:brown
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eos, ducimus sed nobis eligendi hic odio dolore recusandae obcaecati. Excepturi ab maiores, quo culpa labore ex accusantium itaque sapiente exercitationem.</p>
+</body>
+</html>
+who does the body connects with head tag?
+selector -->element selectors 
+selectors 
+1)simple selectors 
+    1)element selector 
+    what is element?
+    comination odf tag+atrribute 
+    2)id selector 
+    3)class selector 
+    4)group selector 
+    5)universal selector 
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: burlywood;
+        }
+       /* h4,h3{
+        color: aqua;
+       }
+       .a{
+        color: chartreuse;
+       }
+       .b{
+        color: orange;
+       }
+       .c{
+        color:blue;
+       }
+       #a{
+        color: chartreuse;
+       }
+       #b{
+        color: orange;
+       }
+       #c{
+        color:blue;
+       } */
+    </style>
+</head>
+<body>
+    <div>
+        <h4>Simple selector</h4>
+        <h4>element selector</h4>
+        <h4>this selector uses directly with element name</h4>
+    </div>
+    <div>
+        <h4 class="a">class selector</h4>
+        <h4 class="b">symbol-->"."</h4>
+        <h4 class="c">atrribute called class</h4>
+    </div>
+    <div>
+        <h4 id="a">id selector</h4>
+        <h4 id="b">represented-->"#"</h4>
+        <h4 id="c">it will use an attribute called has id</h4>
+    </div>
+    <h1>what is the difference between class selector and id selectors</h1>
+    <h2>id-->unqiue selectors</h2>
+    <h2>class--->duplicate</h2>
+    <div>
+        <h4>group selector</h4>
+        <h4>represented-->","</h4>
+        <h3>try on</h3>
+    </div>
+    <div>
+        <h4>universal selector</h4>
+        <h4>represnted-->"*"</h4>
+    </div>
+</body>
+</html> 
+
+--create a table for different type of selector which 10 rows and 5 cols
+2)combinator selectors 
+--combination of selector(simple selector)
+1)descendant selector(space)
+2)child selector(>)
+3)adjacent sibling selector(+)
+4)general sibling selector(~)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p{
+            color:aqua;
+        } */
+        /* span > p{
+            color: aqua;
+        } */
+         div~P{
+            color:aqua;
+         }
+    </style>
+</head>
+<body>
+    <!-- <h4>Combinator selector</h4>
+    <h4>Descendant selector</h4>
+    <h4>represented space</h4> -->
+    <!-- <div>
+        <p>p1</p>
+        <p>p2</p>
+        <span>
+            <p>p3</p>
+            <p>p4</p>
+        </span>
+    </div> -->
+    <!-- <h4>Child selector</h4>
+    <h4>represented-->">"</h4>
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <span>
+            <p>p3</p>
+            <p>p4</p>
+        </span>
+    </div>  -->
+
+    <h4>Adjacent sibling selectors</h4>
+    <h4>represented-->"+"</h4>
+    <div>
+        <p>child1</p>
+        <p>child2</p>
+    </div>
+  <p>coz1</p>
+  <p>coz2</p>
+  <h4>general  sibling selectors</h4>
+  <h4>represented-->"~"</h4>
+  <div>
+    <p>child1</p>
+    <p>child2</p>
+</div>
+<p>coz1</p>
+<p>coz2</p>
+</body>
+</html>
+3)pseudo class selectors 
+--it will say the speical state of an element 
+synatx:
+selector:pseudo-class{
+    propety:value
+}
+hover 
+-----
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:hover{
+   color: blue;
+   font-size: 100px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas praesentium, labore voluptatem similique sed quo, animi, saepe possimus tempore voluptatum voluptates magni impedit culpa aliquid nesciunt dolorem illo non doloribus.</p>
+    </div>
+</body>
+</html>
+
+tooltip 
+-------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display:none
+        }
+        div:hover p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>hover
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam recusandae mollitia voluptas repellendus veniam iste earum temporibus necessitatibus pariatur debitis, id qui accusamus libero corrupti magni suscipit nemo! Libero, illo.</p>
+    </div>
+</body>
+</html>
+
+---if you hover the data in the table must be seen 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tbody td {
+            display: none;
+        }
+
+        table:hover tbody td {
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>course</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>a</td>
+                <td>1</td>
+                <td>fs</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>1</td>
+                <td>fs</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>1</td>
+                <td>fs</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+4)pseduo element selectors 
+--syntax:
+selector::pseduo-element{
+    property-name:property-value
+}
+1)first-letter 
+2)first-line 
+3)before 
+4)after 
+5)mark 
+6)selection 
+5)attribute 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ::selection{
+            color: orangered;
+        }
+        div::first-letter {
+            font-size: 50px;
+            color: blue;
+        } */
+        /* div::first-line{
+            text-transform: uppercase;
+        } */
+        p::before{
+            content: url(one.gif);
+        }
+    </style>
+</head>
+<body>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, necessitatibus accusamus aliquid ad eligendi numquam enim iste alias eveniet voluptatum ex illo delectus voluptate est, illum tenetur dicta quibusdam facilis.</p>
+</body>
+</html>
+selector 
