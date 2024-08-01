@@ -1,0 +1,145 @@
+svg 
+--- 
+using polygon to draw a star
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg>
+        <polygon points="30,10 20,20 10,20 25,30 10,40 25,50 30,60 40,45 65,40 40,30 50,20 30,20" stroke="black" fill="none"></polygon>
+    </svg>
+</body>
+</html> 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+       <circle r="30" cx="30" cy="30"></circle>
+       <line x1="0" y1="30" x2="0" y2="130"  stroke="black" ></line>
+       <line x1="60" y1="30" x2="60" y2="130" stroke="black" ></line>
+       <circle r="30" cx="30" cy="130"></circle>
+       <line x1="0" y1="30" x2="0" y2="130"  
+    </svg>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+       <circle r="30" cx="30" cy="30"></circle>
+       <line x1="0" y1="30" x2="0" y2="130"  stroke="black" ></line>
+       <line x1="60" y1="30" x2="60" y2="130" stroke="black" ></line>
+       <circle r="30" cx="30" cy="130"></circle>
+       <line x1="0" y1="30" x2="0" y2="130"  
+    </svg>
+</body>
+</html> 
+
+polyline 
+--------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="1000" height="1000">
+        <polyline points="100,100 250,100 250,200 400,200 400,300 500,300" fill="none" stroke="black"></polyline>
+    </svg>
+</body>
+</html> 
+--Draw capital A
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="1000" height="1000">
+        <polyline points="100,100 250,100 250,200 400,200 400,300 500,300" fill="none" stroke="black"></polyline>
+    </svg>
+</body>
+</html>  
+
+--audio 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
+--video
+<video controls>
+<source src="" type="mp4"> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls>
+        <source src="video.mp4" type="">
+    </video><br>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html> 
+
+audio and video 
+-----------------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mxzqCcoKKhM?si=m3f6XNdz7VnFQ6wt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+</body>
+</html> 
+
+favicon 
+-------
+--image file .ico 
+--<link href="">
+--next to the title suppose if we display image or icon 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="one.ico">
+</head>
+<body>
+    
+</body>
+</html> 
+
+--simple html project where we design 
+1)signup page 
+2)login page 
+3)weppage
