@@ -1,0 +1,324 @@
+recap 
+-----
+selectors 
+---------
+1)simple selectors 
+    1)element selectors 
+    2)class 
+    3)id 
+    4)group selector 
+    5)universal 
+2)combinator selector 
+    1)descendent 
+    2)child  
+    3)adjacent sibiling 
+    4)general adjacent sibiling 
+3)pseduo class selector 
+    1)hover 
+    2)tooltip 
+synatx:
+selector:pseduo-class{
+    propety-name:propety-value
+}
+4)pseduo element selector 
+    1)first line 
+    2)first letter 
+    3)after 
+    4)before
+    5)selection 
+    6)mark  
+synatx:
+selector::pseduo-element{
+    propety-name:propety-value
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #one li::marker{
+        color: aqua;
+    }
+    #two li::marker{
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    <h5>Mark in pseduo element</h5>
+    <ul id="one">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <ul id="two">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+</body>
+</html>   
+styling for each list 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+    <h5>Mark in pseduo element</h5>
+    <ul id="one">
+        <li id="o1">one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <ul id="two">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+</body>
+</html>
+5)attribute selector
+---------------------
+what are attributes?
+--adding an extra property to tag is called attribute 
+<form>
+<input type=""> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='text']{
+            color:darkorchid;
+        }
+        a[target]{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="mail"></td>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">submit</a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+create form tag for swiggy
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="submit"]{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td style="color: cadetblue;">Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="color: cadetblue;">cost</td>
+        </tr>
+        <tr>
+            <td style="color: cadetblue;">egg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="color: cadetblue;">55rs</td>
+        </tr>
+    </tr>
+    <tr>
+        <td style="color: cadetblue;">Maggi</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="color: cadetblue;">66rs</td>
+    </tr>
+ 
+    </table>
+    <form action="">
+        <tr>
+            <input type="submit">
+        </tr>
+    </form>
+</body>
+</html> 
+
+css comments 
+------------
+what are comments?
+--for user understaning or these are the line ignored by the compiler 
+single line/multile -- /*   */ or shortcutkey --- ctrl+/ 
+
+colors 
+------
+1)color 
+--By default we are going use color name 
+--300 color name 
+--in order to make high interactive webpage 
+2)rgb 
+r red 0 to 255-->256
+g green 0 to 255-->256
+b blue 0 to 255--->256 
+256*256*256=16,777216 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+p{
+    /* color:blue; */
+    color:rgb(105,99,10)
+
+}
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa vel, unde, qui eligendi sed facilis officiis veritatis id iure delectus atque cupiditate itaque sapiente quis ullam dolores quos impedit. Neque?</p>
+</body>
+</html>
+3)hex 
+    hexadecimal representation 
+    1)3color 
+    #fff or #ooo 
+    0-15 --16 
+ r-256 
+ g-256 
+ b-256 
+ 0 -f 
+ 0 to 9
+ a -10
+ b -11
+ c -12
+ d -13
+ e -14
+ f-15
+ 256*256*256*16= 
+   p{
+            color:#0f0;
+        }
+
+    2)6 color  
+    #ffffff 
+    ff-red 
+    ff-green 
+    ff--blue 
+    256*256*256*16*16=49672962345678
+       p{
+        color:#ff5565
+       }
+
+4)hsl
+hsl(hue,saturation,lightness)
+hue--o to 360degree 
+o-red 
+120-green 
+240-blue 
+saturation 
+----------
+--intensity of a color 
+100%--grey 
+50%--ligtness of color 
+0%--white 
+
+lightess 
+--------
+--lightness of the color 
+red 
+100%-dar 
+0--white 
+50%--dullness 
+
+
+css typography 
+--------------
+1)font-family 
+p{
+    font-family:;
+
+}
+or google fonts family
+--https://fonts.google.com/ 
+
+2)font weight
+--character weight 
+Bold,light,thin,normal,ligter,bolder
+3)font-size 
+--it is scale of text 
+small,smaller,large,x-larger
+4)font-style 
+italic 
+oblique
+5)text-transformation 
+    1)uppercase 
+    2)lowercase
+
+7)letter spacing 
+8)word spacing 
+9)line spacing 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size:small;
+  font-style: normal;
+  font-style: oblique;
+  text-transform: lowercase;
+  word-spacing: 20px;
+  letter-spacing: 50px;
+  line-height:50px ;
+}
+      /* p{
+        color:hsl(0, 50%, 50%);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      } */
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate nam nisi modi doloremque illum, quisquam hic natus provident totam possimus explicabo doloribus. Autem sequi alias id aperiam adipisci vitae?</h1>
+</body>
+</html> 
+
+--create a webpage for intresting form 
