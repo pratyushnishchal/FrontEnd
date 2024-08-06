@@ -1,0 +1,264 @@
+units of dimension 
+------------------
+1)pixcel 
+resolution 
+a smallest unit of digital image
+2)cenitmeter 
+- a unit of length 
+example:length of pencil,height of rubber,width of paper
+3)millimeter 
+--a unit of length in metric system 
+ex:width of coin,shirt button
+4)em(element spacing)
+--current size of element
+5)rem 
+1rem=16px
+6)inch 
+1inch=2.74cm
+7)percentage
+
+8)view width 
+9)view height 
+
+
+directions 
+------------------
+
+
+what is Box-model?
+
+--To create box 
+--to align items according to window 
+--
+1)content 
+2)padding 
+3)border 
+
+--element contains content,padding,border 
+--margin comes outside the box model
+
+<p style="color:red"></p>
+1)content 
+width and height
+2)border 
+1)border-width 
+2)border-style 
+3)border-color 
+4)shortend property 
+border:width style color; 
+5)border-radius  
+
+3)padding 
+--it is the space between content and border 
+padding-left:;
+padding-right:;
+padding-top:;
+padding-bottom:;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* h1{
+        width:200px;
+        height:50px;
+        /* border-width:10px ;
+        border-color: red;
+        border-style:dashed ; */
+        border: 10px red solid;/*shortend property */
+        border-radius: 50px;
+       /* border-bottom:10px ;
+        border-top:10px ;
+        border-right:10px ;
+        border-left:10px ;
+        border-top-left-radius: ; */
+        /* padding: 50px; */
+        padding-left:20px ;
+        padding-top: 10px;
+        
+       } */
+    </style>
+</head>
+<body>
+   <h1>Goodnoon</h1>
+</body>
+</html>
+
+4)margin
+--by default what is the value of margin 8px 
+the way of using margin involes 4syntax \
+syntax1
+-------
+margin:val;it will involue all four dirction top,left,bottom and right 
+
+synatx2
+-------
+margin:arg1 arg2;
+arg1-->left and right 
+arg2:bottom and top 
+
+synatx3:
+--------
+margin:arg1 arg2 arg3;
+arg1-->top 
+arg2-->left or right; 
+arg3-->bottom 
+
+
+synatx 4: 
+margin:arg1 arg2 arg3 arg4;
+arg1-->top 
+arg2-->right
+arg3-->bottom 
+arg4-->left
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* margin: 10px; */
+            /* margin: 10px 20px; */
+            /* margin:10px 8px 6px; */
+            margin:2px 3px 4px 5px;
+        }
+        div{
+            background-color: blue;
+            width: 100%;
+            height:1000%;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+ 
+ --creating a box arround the image 
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img{
+        border: firebrick;
+        border-style: solid;
+        border-width: 20px;
+       }
+    </style>
+</head>
+<body>
+    <img height="50%" width="60%" src="./1.jpeg" alt=" No Image" >
+</body>
+</html> 
+
+position 
+---------
+--aligning the content is called position
+--display the content of the elements in the browser according to the user wish 
+1)static 
+--by default it will take this position 
+2)relative 
+--you can see the change only when realtive some values like top,left,right and bottom and it will position from its current position 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            background-color: grey;
+            width:100px;
+        }
+        .one{
+            background-color: aqua;
+        }
+        .two{
+            background-color: blue;
+           /* position: relative;
+           top:10px; */
+           position: absolute;
+            /* top: 10px; */
+            left:50px;
+        }
+        .three{
+            background-color: brown;
+            
+        }
+        .four{
+            background-color: bisque;
+        }
+        .five{
+            background-color: chartreuse;
+            position: absolute;
+            top:45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">parent
+        <div class="one">child1</div>
+        <div class="two">child2</div>
+        <div class="three">child3</div>
+        <div class="four">child4</div>
+        <div class="five">child5</div>
+    </div>
+</body>
+</html>
+3)absolute 
+--it will take the position from the parent.you can specify top,bottom,right and left 
+4)fixed 
+5)sticky
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            background-color: grey;
+            width:100%;
+            height:1000%;
+        }
+        .one{
+            background-color: aqua;
+            position: sticky;
+            top:0px;
+        }
+        .two{
+            background-color: blue;
+           
+           
+        }
+        .three{
+            background-color: brown;
+            /* position: fixed;
+            top:50px; */
+            
+        }
+        .four{
+            background-color: bisque;
+        }
+        .five{
+            background-color: chartreuse;
+           
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">parent
+        <div class="one">child1</div>
+        <div class="two">child2</div>
+        <div class="three">child3</div>
+        <div class="four">child4</div>
+        <div class="five">child5</div>
+    </div>
+</body>
+</html>
