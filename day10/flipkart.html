@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+    body {
+        background-color: rgb(221, 238, 238);
+        overflow-x: hidden;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    #navbar ul {
+        display: flex;
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+
+    }
+
+    input[type="text"] {
+        width: 650px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(236, 249, 249);
+        color: black;
+    }
+
+    #navbar li {
+        font-size: 18px;
+    }
+
+    input::placeholder {
+        padding: 10px;
+        color: rgb(112, 111, 111);
+        font-size: 20px;
+        padding-top: 100px;
+    }
+
+    input:focus {
+        outline: none;
+        font-size: 20px;
+    }
+
+    li i {
+        height: 10px;
+        width: 10px;
+    }
+
+    .body ul {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .body li img {
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+
+    }
+
+    .body ul li {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        background-color: blue;
+        width: 140px;
+        height: 100px;
+        padding: 13px;
+        border-radius: 10px;
+        color: white;
+        transition: 0.6s;
+    }
+
+    .bannerimg img {
+        margin-top: 15px;
+
+        width: 100%;
+        height: 250px;
+    }
+
+    .mobiles {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 20px;
+
+    }
+
+    .mobiles ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobiles img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .mobiles ul li {
+        border: 1px solid rgb(241, 234, 234);
+        margin-bottom: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .mobiles li :hover img {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+    }
+
+    .bodyimg {
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+    .footer-content{
+        display: flex;
+        /* justify-content: space-around; */
+        background-color: black;
+        color: white;
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .footer-content p{
+        color: grey;
+        padding-bottom: 20px;
+        
+    }
+    .footer-section{
+        padding-right: 100px;
+    }
+    .footer ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .vl{
+        border-left: 1px solid blue;
+        height: 280px;
+    }
+    .add p{
+        width: 150px;
+        margin-left: 20px;
+    }
+    .add i{
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .regadd{
+        margin-left: 60px;
+
+    }
+    .regadd p{
+        width: 150px;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div id="navbar">
+            <ul>
+                <li><img src="/assets/flipkartlogo.png" alt="logo" width="100px"></li>
+                <li><input type="text" placeholder="🔍Search for products,Brand and more"></li>
+                <li style="cursor: pointer;"><a href="/assignment/question4.html"><i
+                            class="fa-regular fa-user"></i>&nbsp; &nbsp;Login</a></li>
+                <li style="cursor: pointer;"><i class="fa-solid fa-cart-shopping"></i>&nbsp; &nbsp;Cart</li>
+                <li style="cursor: pointer;"><i class="fa-solid fa-shop"></i>&nbsp; &nbsp; &nbsp;Become a seller</li>
+            </ul>
+        </div>
+        <br>
+        <div class="body">
+            <ul>
+                <li><img src="/assets/one.PNG">
+                    <center>Top Offer</center>
+                </li>
+                <li><img src="/assets/two.PNG">
+                    <center>Mobiles & Tablets</center>
+                </li>
+                <li><img src="/assets/three.PNG">
+                    <center>TVs & Appliances</center>
+                </li>
+                <li><img src="/assets/four.PNG">
+                    <center>Electronics</center>
+                </li>
+                <li><img src="/assets/five.PNG">
+                    <center>Fashion</center>
+                </li>
+                <li><img src="/assets/six.PNG">
+                    <center>Beauty</center>
+                </li>
+                <li><img src="/assets/seven.PNG">
+                    <center>Home & Kitchen</center>
+                </li>
+                <li><img src="/assets/8.PNG">
+                    <center>Furniture</center>
+                </li>
+                <li><img src="/assets/9.PNG">
+                    <center>Travel</center>
+                </li>
+                <li><img src="/assets/10.PNG">
+                    <center>Grocery</center>
+                </li>
+            </ul>
+        </div>
+        <div class="bannerimg">
+            <img src="/assets/banner.jpg" alt="banner">
+        </div>
+        <div class="mobiles">
+            <h2>Best Deals on Smartphones</h2>
+            <br><br>
+            <ul>
+                <li>
+                    <center><img src="/assets/m1.jpg" class="img"></center>
+                    <br>
+                    <center>Realme P1 5g</center>
+                    <center><b>From ₹14,999</b></center>
+                </li>
+                <li>
+                    <center><img src="/assets/m2.png" class="img"></center>
+                    <br>
+                    <center>Vivo T2 Pro 5g</center>
+                    <center><b>From ₹20,999</b></center>
+                </li>
+                <li>
+                    <center><img src="/assets/m3.jpeg" class="img"></center>
+                    <br>
+                    <center>Poco M6 Pro 5g</center>
+                    <center><b>From ₹9,249</b></center>
+                </li>
+                <li>
+                    <center><img src="/assets/m4.jpeg" class="img"></center>
+                    <br>
+                    <center>Redmi 12 5g</center>
+                    <center><b>From ₹9,999</b></center>
+                </li>
+                <li>
+                    <center><img src="/assets/m5.jpg" class="img"></center>
+                    <br>
+                    <center>Moto Edge 50 Fusion</center>
+                    <center><b>From ₹20,999</b></center>
+                </li>
+
+            </ul>
+        </div>
+        <div>
+            <div class="bodyimg">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/e4857495b5d2e5a2.jpg?q=20" width="490">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/daeed90eb62e77d3.png?q=20" width="490">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/fcc9b52b63f73932.jpg?q=20" width="490">
+                <br><br>
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/f9f788398c975058.jpg?q=20" width="490">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9e9aac081d595462.jpg?q=20" width="490">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c2c99f5afba3627e.jpg?q=20" width="490">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <p>ABOUT</p>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Flipkart Stories</li>
+                        <li>Press</li>
+                        <li>Corporate Information</li>
+                    </ul>
+                </div>
+                <div class="footer-section group-companies">
+                    <p>GROUP COMPANIES</p>
+                    <ul>
+                        <li>Myntra</li>
+                        <li>Cleartrip</li>
+                        <li>Shopsy</li>
+                    </ul>
+                </div>
+                <div class="footer-section group-companies">
+                    <p>HELP</p>
+                    <ul>
+                        <li>Payments</li>
+                        <li>Shipping</li>
+                        <li>Cancellation & Returns</li>
+                        <li>FAQ</li>
+                        <li>Report Infringement</li>
+                    </ul>
+                </div>
+                <div class="footer-section group-companies">
+                    <p>CONSUMER POLICY</p>
+                    <ul>
+                        <li>Cancellation & Returns</li>
+                        <li>Term of Use</li>
+                        <li>Security</li>
+                        <li>Privacy</li>
+                        <li>Sitemap</li>
+                        <li>Grievance Redressal</li>
+                        <li>EPR Comliance</li>
+                    </ul>
+                </div>
+                <div class="vl"></div>
+                <div class="add">
+                    <p>Mail Us:</p>
+                    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique repellat eligendi voluptatem nihil dicta obcaecati perspiciatis provident officiis non.</p>
+                    <p>Social:</p>
+                    <i class="fa-brands fa-facebook-f" style="color:white;"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="regadd">
+                    <p>Registered Office Address</p>
+                    <p style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid molestiae laboriosam unde? Est, labore totam. Illum consequatur ab beatae sed dicta, modi culpa, ducimus aliquid error voluptatum saepe vitae temporibus.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
