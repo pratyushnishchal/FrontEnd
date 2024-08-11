@@ -1,0 +1,292 @@
+Recap 
+-----
+Visibility 
+    1)collaspe 
+    2)hidden 
+    3)block 
+display 
+    1)inline 
+    2)block 
+    3)inline-block 
+    4)flex 
+        1)flex container 
+        2)flex item 
+        3)flex direction --row/col 
+        4)justify-content 
+        5)align items 
+project code 
+-------------
+
+--images are missing please add the images  
+-------------------------------------------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: grey;
+        }
+        input[type='text']{
+            width: 300px;
+            border-radius: 50px;
+            border:none;
+        }
+        #navbar{
+            border:1px white solid;
+           
+            background-color: aliceblue;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:40px;
+        }
+        #header{
+            margin-top: 10px;
+            list-style-type:none;
+            display: flex;
+            justify-content: space-around;
+            border:1px white solid;
+            background-color: aliceblue;
+            border-radius: 10px;
+            align-items: center;
+            width:95%;
+            margin-left: 20px;
+        }
+        #content{
+            margin-top: 10px;
+            list-style-type:none;
+            display: flex;
+            justify-content: space-around;
+            border:1px white solid;
+           
+            margin-left: 10px;
+        }
+        #content1{
+            margin-top: 10px;
+            list-style-type:none;
+            display: flex;
+            justify-content: space-around;
+           
+           
+           
+        }
+        #main{
+            margin-top: 10px;
+            background-color: aliceblue;
+            border:1px white solid;
+            width:95%;
+            margin-left: 20px;
+        }
+        #footer{
+            width: 90%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+       <li><img src="flip.png" alt="" width="120px" height="30px"></li>
+       <li><input type="text" placeholder="🔍 Serach for products ,Brands and more"></li>
+       <li>🤵Login</li>
+       <li>🛒Cart</li>
+       <li>🛍️best seller</li>
+    </div>
+    <div id="header">
+        <div>
+        <li>
+        <img src="top.jpg" alt="" width="50px" height="50px"></li>
+        <figcaption>Top offers</figcaption>
+        </div>
+        <div>
+            <li>
+            <img src="fashion.jpg" alt="" width="50px" height="50px"></li>
+            <figcaption>Fashion</figcaption>
+            </div>
+            <div>
+                <li>
+                <img src="Beauty.jpg" alt="" width="50px" height="50px"></li>
+                <figcaption>Beauty</figcaption>
+                </div>
+                <div>
+                    <li>
+                    <img src="kitchen.jpg" alt="" width="50px" height="50px"></li>
+                    <figcaption>Home & </figcaption>
+                    <figcaption>Kitchen</figcaption>
+                    </div>
+            <div>
+                        <li>
+                        <img src="furniture.jpg" alt="" width="50px" height="50px"></li>
+                        <figcaption>Furniture</figcaption>
+                        </div>
+         <div>
+                            <li>
+                            <img src="Travel.jpg" alt="" width="50px" height="50px"></li>
+                            <figcaption>Travel</figcaption>
+                            </div>
+         <div>
+                                <li>
+                                <img src="Grocery.jpg" alt="" width="50px" height="50px"></li>
+                                <figcaption>Grocery</figcaption>
+        </div>
+        
+       
+       
+    </div>
+
+<div id="main">
+    <div id="content">
+        <div>
+            <li><img src="mob1.jpg" alt="" width="100px" height="100px"></li>
+            <figcaption>Redmi</figcaption>
+        </div>
+        <div>
+            <li><img src="mob2.jpg" alt="" width="100px" height="100px"></li>
+            <figcaption>Apple</figcaption>
+        </div>
+        <div>
+            <li><img src="mob3.jpg" alt="" width="100px" height="100px"></li>
+            <figcaption>oppo</figcaption>
+        </div>
+        <div>
+            <li><img src="mob1.jpg" alt="" width="100px" height="100px"></li>
+            <figcaption>Redmi</figcaption>
+        </div>
+        <div>
+            <li><img src="mob2.jpg" alt="" width="100px" height="100px"></li>
+            <figcaption>Apple</figcaption>
+        </div>
+        <div>
+            <li><img src="mob3.jpg" alt="" width="100px" height="100px"></li>
+            <figcaption>oppo</figcaption>
+        </div>
+        </div>
+        <div id="content1">
+            <div>
+                <li><img src="mob1.jpg" alt="" width="100px" height="100px"></li>
+                <figcaption>Redmi</figcaption>
+            </div>
+            <div>
+                <li><img src="mob2.jpg" alt="" width="100px" height="100px"></li>
+                <figcaption>Apple</figcaption>
+            </div>
+            <div>
+                <li><img src="mob3.jpg" alt="" width="100px" height="100px"></li>
+                <figcaption>oppo</figcaption>
+            </div>
+            <div>
+                <li><img src="mob1.jpg" alt="" width="100px" height="100px"></li>
+                <figcaption>Redmi</figcaption>
+            </div>
+            <div>
+                <li><img src="mob2.jpg" alt="" width="100px" height="100px"></li>
+                <figcaption>Apple</figcaption>
+            </div>
+            <div>
+                <li><img src="mob3.jpg" alt="" width="100px" height="100px"></li>
+                <figcaption>oppo</figcaption>
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="footer.avif" alt="" width="966px">
+        </div>
+</body>
+</html> 
+
+flex-basis 
+----------
+--we can specify width and height of flex item 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex{
+          
+            justify-content: space-around;
+            
+        }
+        .flex1{
+            list-style: none;
+            border:3px dotted red;
+            flex-basis: 25em;
+           flex:20 20;
+        }
+    </style>
+</head>
+<body>
+    <ul id="flex">
+        <li class="flex1">one</li>
+        <li class="flex1">two</li>
+        <li class="flex1">three</li>
+        <li class="flex1">four</li>
+        <li class="flex1">five</li>
+    </ul>
+</body>
+</html> 
+
+grids 
+----- 
+--it is used for layout the entier webpage 
+--flexbox is mostly used for positioning items one-dimensional layout 
+--css grid is used for designing two dimensional layouts 
+normal device you can go with any type but but moble applicatio n 
+header 
+aside
+nav 
+main 
+section 
+footer 
+
+creating grid 
+1)creating columns 
+in grid every column is of same size.in grid we can change accordingly
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            /* grid-template-columns: 33% 33% 33%; */
+            grid-template-columns:repeat(3,1fr)
+        }
+        #content div{
+            background: blue;
+            padding: 30px;
+        } 
+
+        #content div:nth-child(even){
+            background: red;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div id="content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
