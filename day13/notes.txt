@@ -1,0 +1,59 @@
+grid-template-area 
+-------------------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            width:950px;
+            height:750px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns:50% 50%;
+            grid-template-rows: 150px 150px 80px 80px 80px;
+            grid-template-areas: "header header"
+            "nav nav"
+            "main section"
+            "main section"
+            "footer footer"
+            ;
+        }
+        header{
+            grid-area: header;
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+        nav{
+            grid-area: nav;
+            text-align: center;
+            background-color: chocolate;
+        }
+        main{
+            grid-area: main;
+            text-align: center;
+            background-color: blueviolet;
+        }
+        section{
+            grid-area: section;
+            text-align: center;
+            background-color: orangered;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+    <header>Header</header>
+    <nav>navbar</nav>
+    <main>main</main>
+    <section>section</section>
+    <footer>footer</footer>
+</div>
+</body>
+</html>

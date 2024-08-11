@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* overflow-x:hidden; */
+    }
+
+    .container {
+        display: grid;
+        height: calc(100vh - 60px);
+        width: 1532.2px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.05fr 1fr;
+        grid-template-areas: "nav1 nav1"
+            "nav2 nav2"
+            "main main"
+            "sec1 sec2"
+
+            "footer footer";
+
+    }
+
+    .nav1 {
+        grid-area: nav1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: grey; */
+
+    }
+
+    .nav2 {
+        grid-area: nav2;
+        background-color: #282A35;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #sec1 {
+        grid-area: sec1;
+    }
+
+    #sec2 {
+        grid-area: sec2;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .left ul {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .left ul li {
+        cursor: pointer;
+        list-style-type: none;
+        padding: 5px;
+        height: 58.4px;
+        width: 102.512px;
+        padding: 16px 16px 16px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right ul {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .right ul li {
+        cursor: pointer;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    .left ul li:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    input[type="text"] {
+        width: 175px;
+        height: 35.6px;
+        border: 1px solid grey;
+        border-radius: 20px;
+        margin-left: 15px;
+    }
+
+    input::placeholder {
+        padding-left: 10px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    input:focus {
+        outline: none;
+        border: 3px solid #04AA6D;
+    }
+
+    .signup {
+        padding: 10px;
+        background-color: #04AA6D;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 13px;
+        width: 93px;
+        height: 40px;
+        color: white;
+        text-align: center;
+    }
+
+    .login {
+        padding: 10px;
+        background-color: #d7ebe4;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 13px;
+        margin: -20px;
+        width: 79px;
+        height: 40px;
+        color: black;
+        text-align: center;
+
+    }
+
+    .login:hover {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    .right ul li:hover {
+        padding: 10px;
+        background-color: #b2c5be;
+        border-radius: 20px;
+    }
+
+    .nav2 ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        height: 30px;
+
+    }
+
+    .nav2 ul li {
+        list-style-type: none;
+        padding: 10px;
+        color: white;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav2 ul li:hover{
+        background-color: black;
+        cursor: pointer;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <nav class="nav1">
+            <div class="left">
+                <ul>
+                    <img src="logo.png" alt="logo" width="70px" style="padding-left: 10px;">
+                    <li>Tutorials</li>
+                    <li>Exercises</li>
+                    <li>Sevices</li>
+                    <input type="text" placeholder="Search...">
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Plus</li>
+                    <li>Space</li>
+                    <li>Get Certified</li>
+                    <button class="signup">Sign Up<button class="login">Log in</button></button>
+
+
+                </ul>
+            </div>
+        </nav>
+        </ul>
+        <div class="nav2">
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>SQL</li>
+                    <li>PYTHON</li>
+                    <li>JAVA</li>
+                    <li>PHP</li>
+                    <li>HOW TO</li>
+                    <li>W3.CSS</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>BOOTSTRAP</li>
+                    <li>REACT</li>
+                    <li>MYSQL</li>
+                    <li>EXCEL</li>
+                    <li>JQUERY</li>
+                    <li>NODE</li>
+                    <li>XML</li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <!-- <img src="banner.jpeg" alt=""> -->
+        </main>
+        <section id="sec1">Section1</section>
+        <section id="sec2">Section2</section>
+        <footer>footer</footer>
+
+    </div>
+</body>
+
+</html>
