@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #parent{
+        background-color: red;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 35px;
+    }
+    #zero{
+        grid-column: 2/3;
+    }
+    #nine{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #three{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #five{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #five1{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="zero">0</div>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five1">5</div>
+        <div id="five">5</div>
+        <div id="nine">9</div>
+    </div>
+</body>
+</html>
