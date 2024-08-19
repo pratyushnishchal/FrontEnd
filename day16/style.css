@@ -1,0 +1,143 @@
+.dropdown {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    width: 40%;
+    font-weight: bolder;
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 200px;
+}
+
+li a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: none;
+    width: 130px;
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.nav-link:hover,
+.dropdown:hover {
+    color: #FF5200;
+}
+
+.nav12 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+a img {
+    width: 65px;
+    margin-right: 1rem;
+}
+
+a img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+p {
+    font-weight: 600;
+}
+
+span {
+    font-size: 30px;
+
+}
+
+.starticon {
+    color: green;
+}
+
+.text {
+    font-size: 16px;
+    color: rgb(83, 82, 82);
+}
+
+.card img {
+    height: 182px;
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+.pills {
+    border: 1px solid grey;
+    padding: 10px;
+    width: 9%;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.icon1 {
+    font-size: 15px;
+}
+
+.card {
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    transition: 0.7s;
+}
+
+.image1 {
+    width: 280px;
+}
+.app1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer1{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.liheading{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.liheading img{
+    width: 50px;
+    mix-blend-mode:color-dodge;
+}
+.item{
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.copywrite{
+    list-style-type: none;
+    font-size: 16px;
+}
+@media only screen and (min-width:200) and (max-width:767px) {
+    .row{
+        /* width: 100%; */
+        flex-direction: row;
+    }
+}
