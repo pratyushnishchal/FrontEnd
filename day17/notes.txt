@@ -1,0 +1,250 @@
+Introduction to javascript 
+--------------------------
+--who designed ?
+    Brenden etich -1995 
+    10 to 15days 
+--olden js --before 2014
+--modern js --after 2014(ES5,ES6)
+--mocha 
+--livescript 
+--javascript
+--browser(Netscape navigator)
+
+
+--why he desinged?
+ --form validation,application
+ --client side and sever side 
+ --mobile application 
+ frameworks 
+ ----------
+ 1)vue.js 
+ 2)Angular 
+
+ libraries 
+ ---------
+ 1)react 
+ 2)node 
+
+--what is javascript? 
+    dynamic programming language which is designed to make a interactive webpage 
+--where to use js?
+    command prompt 
+    online compliers 
+    webpage-->inspect--->console
+    vsc --->node (why?)
+    --user friendly 
+    --many package
+    terminal 
+    notepad 
+--how to use js?
+1)innerhtml(Dom)
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hai</p>
+    <script>
+         document.getElementById('demo').innerHTML="Akshatha"
+     
+    </script>
+</body>
+</html>
+2)document.write() 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("Excelr")
+    </script>
+</body>
+</html>
+3)Window.alter() 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.alert("thank you")
+    </script>
+</body>
+</html>
+4)console.log()  
+--it is debugging tool for any of the browsers 
+
+<script>
+</script> 
+
+1)head 
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="a.js">
+    
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
+2)<body> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="a.js">
+    
+    </script>
+</body>
+</html> 
+
+a.js 
+----
+console.log("wow")
+3)outside 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+   
+</body>
+<script src="a.js">
+    
+</script>
+</html> 
+console.log()
+--------------
+--it is inbuilt method which helps us to display the ouput the on the browser 
+
+variables 
+---------
+--its a conmtainet which holdes a value 
+--keywords are bulits-in words in js
+--we different keywrords to dclare a js varible 
+1)var 
+--old js 
+--global variable
+--varible hositing 
+what is the meaning ?
+--we can use avarible without even declaring it
+2)let 
+--new js 
+--block scope 
+--it doesnt support hositing
+code 
+----
+a=10 
+console.log(a)
+let a;
+
+a=10 
+ ^
+
+ReferenceError: Cannot access 'a' before initialization
+    at Object.<anonymous> (C:\Batch3\Javascript\class1\r.js:1:2)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12)
+    at node:internal/main/run_main_module:30:49
+
+Node.js v22.2.0
+constant 
+--------
+--once the value is assigned ot cannot be changed 
+const a=10
+console.log(a)
+a="akshatha"
+console.log(a) 
+
+--wap to check whether hoisting will be support by let for printing addition of two numbers 
+--wap to print const of two number for addition 
+
+Datatypes 
+---------
+what is datatype? 
+the type of the data /classification of data
+1)primatative 
+--it will return a value
+    1)number 
+        1)int ----whole number 
+        example:ex:2,-2 
+        1)number of student present 
+        2)number of chair/system 
+        3)number of childeren a parent can have 
+        2)float --which has decimal value 
+        example:-21.2,30.2 
+        example:
+        1)length of table 
+        2)temperature 
+        3)weight and height 
+        4)distance 
+
+    2)big int 
+    --n(oribary precision)the number is big 
+    123456n
+    3)string 
+    -'',"" any word 
+    4)null 
+
+    5)undefined --when yoy not declared the value 
+    6)boolean --true(1) or false(0)
+    7)symbol--keyword symbol 
+    --weak set or collection of objects  
+    typeof()-->it will say what type of datatype we are using
+
+    code
+    ----
+    let a='10'
+console.log(a,typeof(a))
+let b=10
+console.log(b,typeof(b))
+//number 
+//string 
+//bigint 
+a=11234567890n
+console.log(a,typeof(a))
+b=null
+console.log(b,typeof(b))
+let c;
+console.log(c,typeof(c)) 
+let d=false;
+console.log(d,typeof(d)) 
+let e=Symbol('akshatha')
+console.log(e,typeof(e))
+let f=Symbol(10)
+console.log(f,typeof(f))
+2)non-primatative 
+    1)object 
+--it will return address 
+--{
+    key:value
+}
+--in order to accsess the elements 
+1)dot notation 
+2)bracket notation 
+let person={
+    name:'akshatha'
+}
+console.log(person.name)
+console.log(person['name'])
