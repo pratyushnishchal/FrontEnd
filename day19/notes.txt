@@ -1,0 +1,180 @@
+5)leftshift (<<)
+synatx: 
+element<<no of shifts 
+3<<2 
+ex: 127<<4 --2034
+99<<2 --396 
+
+6)string operator 
+--concatenate 
+join two things 
+let a="excelr"
+let b="banaglore"
+console.log(a+" "+b) 
+
+let a=true,b=1
+console.log(a+b) 
+
+7)special operator 
+1)comma , 
+let a=1,2,3 
+code 
+-----
+let a=(1,2,3) 
+console.log(a) 
+
+output 
+------
+3 
+2)?:-->ternary 
+synatx: 
+console.log(condition?true_statement:false_statement)
+
+let a=10 
+console.log(a%2!=0?"its even":"its odd")
+its odd
+
+3)delete  
+let person={
+    name:'akshatha',
+    job:'excler',
+    salary:2
+}
+console.log(person)
+delete person.salary 
+console.log(person) 
+
+ouput 
+----- 
+{ name: 'akshatha', job: 'excler', salary: 2 }
+{ name: 'akshatha', job: 'excler' } 
+
+question 
+--------
+wap for terniary operator if a number is divisible by 5 then it should say "hai" or "bye" 
+wap to create nested object and delete nested key in it 
+let obj={
+    name:
+    {
+firstname:'Akshatha',
+secondname:'A'
+    },
+    address:'bangalore'
+}
+console.log(obj)
+delete obj.name.firstname 
+console.log(obj) 
+
+output 
+-----
+{
+  name: { firstname: 'Akshatha', secondname: 'A' },
+  address: 'bangalore'
+}
+{ name: { secondname: 'A' }, address: 'bangalore' }
+4)instanceof 
+--will be done after class  
+
+conditions 
+---------- 
+what is conditions?
+--if a given logic is right then i will one statement else it will display another statement 
+why do need conditions ?
+sequnce with condition  
+1)if condition 
+2)if else condition 
+3)else ladder 
+
+algorithm
+step by step procedure to write any program 
+flowchart 
+pitorical represntation of program structure 
+
+program and programming language 
+program-->A set instructions 
+PL-->the language used to write a program is called PL 
+
+1)if condition 
+synatx: 
+if(condition)
+{
+    statement
+} 
+//wap to if a number is divisible by 5 then display "hai" msg 
+
+output
+------
+PS C:\Batch3\Javascript\class3> node a.js
+the value of num is 15
+hai
+PS C:\Batch3\Javascript\class3> node a.js
+the value of num is 8
+PS C:\Batch3\Javascript\class3>  
+
+code 
+----
+// let num=15 
+// console.log("the value of num is",num)
+// if(num%5==0)
+//     {
+//         console.log("hai")
+//     } 
+
+
+code
+----
+//npm install prompt-sync 
+const prompt=require("prompt-sync")() 
+let num=prompt(parseInt("enter the number"))
+console.log("the value of num is",num)
+if(num%5==0)
+    {
+        console.log("hai")
+    } 
+error for prompt 
+----------------
+let num=prompt(int("enter the number"))
+        ^
+
+ReferenceError: prompt is not defined
+    at Object.<anonymous> (C:\Batch3\Javascript\class3\a.js:7:9)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12)
+    at node:internal/main/run_main_module:30:49
+
+Node.js v22.2.0 
+
+//wap to check whether a given string is concated if its concatinated then display "hey"  
+//wap to check whether a given string is concated if its concatinated then display "hey"
+let str1=prompt("enter string1")
+let str2=prompt("enter string2")
+let res=str1+str2
+if(res) {
+    console.log(res)
+console.log("hey")
+}
+//wap to check given  numbers is signel digit if it is single digit .display that digit itsself 
+
+2)if else 
+synatx :
+if(condition){
+    //true statement
+}
+else{
+    //false statement
+} 
+//wap if the given number is divisible by 7 and 5 then it say 'excler' else 'not excelr'
+num=15 
+if((num%7==0) && (num%5==0)){
+    console.log("excelr)
+}
+else{
+    console.log("not excelr")
+} 
+
+//wap to check whether the given number is single didit,double or triple digit and if it is 4 digits just exit 
+//check whether the given number is even or odd 
+//wap to check whther a given number is poisitive or negative
