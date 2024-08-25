@@ -1,0 +1,109 @@
+//wap to check whether the given number is single digit,double or triple digit and if it is 4 digits just exit 
+const prompt=require("prompt-sync")()
+let num=prompt(parseInt("enter the number"))
+console.log("the number is",num)
+if((num>=9)||(num>=99)||(num>=999)){
+console.log(num)
+}
+else{
+console.log("hey its morethan 3digit number")
+}
+
+
+
+
+
+
+
+//check whether the given number is even or odd 
+//wap to check whther a given number is poisitive or negative
+
+
+//nested if's
+let username=true,password=true;
+console.log("please signup")
+if((username==true)&&(password==true)){
+    console.log("thank you for adding the details")
+    console.log("please login")
+    if((username==true)&&(password==true)){
+        console.log("welcome to the webpage")
+    }
+} 
+let username=true,password=true;
+console.log("please signup")
+if((username==true)&&(password==true)){
+    console.log("thank you for adding the details")
+    console.log("please login")
+    if((username==true)&&(password==true)){
+        console.log("welcome to the webpage")
+    }
+    else{
+        console.log("your login creditails are wrong")
+    }
+   
+}
+else{
+    console.log("looking in to your data")
+}
+
+----crt code 
+const prompt=require("prompt-sync")()
+//let username=prompt("enter your username")
+//let password=prompt("enter your password");
+// console.log("please signup")
+var username,password;
+if((username==prompt("enter your username"))){
+    console.log("thank you for adding the details")
+    console.log("please login")
+    if((username==username))
+    {
+        console.log("welcome to the webpage")
+    }
+    else{
+        console.log("your login creditails are wrong")
+    }
+   
+}
+else{
+    console.log("looking in to your data")
+} 
+
+3)nested else if condition 
+synatx 
+------
+if(condition){
+    if condition statement
+}
+else if(condition1){
+ stament for else if condition
+}
+else if(condition2){
+    stam
+}
+.
+.
+.
+.
+else{
+    stmt
+} 
+
+loops 
+-----
+what is loops?
+why do we need loops?
+what is the difference between loops and conditions?
+condition-->if will check only once 
+loops-->repeating it again and again 
+1)for loop 
+2)while loop 
+3)do while loop 
+4)switch statements  
+
+1)for loop 
+-----------
+--when you already know the number of iterations that you have to perform 
+syantx: 
+for(initilation;condition;updating statement){
+    body of the for loop
+}
