@@ -1,0 +1,151 @@
+javascript operators 
+--------------------
+what is operator?
+the expression which gives output/value
+ex:
+a=10 
+b=2
+a+b=12
+a,b=operands 
++=operator 
+12-->value 
+why do we need operator? 
+1)arithemetic operator 
++,-,*,/,**,%
+/--->quotient
+%--->remainder
+code 
+----
+let a=2,b=10;
+console.log("Arithematic operators")
+console.log("the value of a is",a)
+console.log("the value of b is",b)
+console.log("add-->",a+b)
+console.log("sub-->",a-b)
+console.log("mult-->",a*b)
+console.log("div-->",a/b)
+console.log("mod-->",a%b)
+console.log("expo",a**b)
+
+output 
+------
+Arithematic operators
+the value of a is 2
+the value of b is 10
+add--> 12
+sub--> -8
+mult--> 20
+div--> 0.2
+mod--> 2
+expo 1024
+
+2)assignment arithmetic operator 
+"=" 
+-=,+=,/=,%=,*=,**=
+a=10 
+a+=5;
+code 
+----
+let a=10;
+console.log("Assignement operator")
+console.log("the value of a is",a)
+console.log("after performing addition",a+=14)
+console.log("after performing sub",a-=14)
+console.log("after performing mult",a*=14)
+console.log("after performing mod",a%=14)
+console.log("after performing expo",a**=14)
+
+output 
+------
+Assignement operator
+the value of a is 10
+after performing addition 24
+after performing sub 10
+after performing mult 140
+after performing mod 0
+after performing expo 0 
+3)conditional/comparision/relational operator 
+--the ouput of conditions true/false 
+==-->equal to 
+!=-->not equal to 
+===--->strictly equal to operator
+!==-->not strictly equal to operatot 
+>,<,>=,<= 
+what is the difference?
+== will check the value 10,'10'
+===-->it will check for datatype 
+code 
+----
+let a=10,b='10',c=5;
+console.log("conditional operators")
+console.log("the value of a is",a)
+console.log("the value of b is",b)
+console.log("equal to -->",a==b)
+console.log("not equal to -->",a!=b)
+console.log("strictly equal -->",a===b)
+console.log("not strictly to -->",a!==b)
+console.log("greater than-->",a>b)
+console.log("greater than or equal to-->",a>=b)
+console.log("lesser than -->",a<b)
+console.log("lesser than equal to -->",a<=b) 
+output 
+------
+conditional operators
+the value of a is 10
+the value of b is 10
+equal to --> true
+not equal to --> false
+strictly equal --> false
+not strictly to --> true
+greater than--> false
+greater than or equal to--> true
+lesser than --> false
+lesser than equal to --> true
+4)logical operator 
+1)And--> && 
+--whenever you give any number of statements and if all the staements are true then it will give true
+A       B       A&&b
+T       T          T 
+T       F          F
+F       T          F
+F       F          F 
+
+2)or--> || 
+--whenever you give any number of statements and if even one of the staements are true then it will give true
+A       B       A&&b
+T       T          T 
+T       F          T
+F       T          T
+F       F          F 
+
+3)not-->! 
+if you return true it will return false and if you return it will return true 
+
+code 
+----
+const a=true,b=false 
+console.log("logical operator")
+console.log("and-->",a&&b)
+console.log("or-->",a||b)
+console.log("not-->",!a) 
+
+output 
+------
+logical operator
+and--> false
+or--> true
+not--> false 
+
+code
+5)bitwise operator 
+1)bitwise and-->& 
+2)bitwise or-->| 
+3)not--> ~
+4)rightshift--> >> 
+-->synatx:
+element>>no of shifts 
+ex:2>>2
+5)leftshift--> <<
+
+6)string operator 
+7)special operator 
