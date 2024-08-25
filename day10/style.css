@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: grey;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+
+    /* flex-direction */
+    /* by default flex-direction is row */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+
+    /* justify content */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    
+    /* Align items */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+
+    /* Align self is used to align only individual item */
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    align-content: center;
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    
+}
+.item{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    /* Flex Grow will enable the flex item to grow  */
+    /* flex-grow: 1; */
+    /* flex:flex-grow | flex-shrink | flex-basis */
+    /* flex:1; */
+    
+}
+/* .item-3{
+    height: 150px;
+} */
+/* .item-4{ */
+    /* font-size: 70px; */
+    /* align-self:flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: stretch; */
+    /* align-self: center; */
+/* } */
+
+/* Order is used to order the items */
+/* .item-1{
+    order: 3;
+}
+.item-2{
+    order: 4;
+}
+.item-3{
+    order: 0;
+}
+.item-4{
+    order: 1;
+}
+.item-5{
+    order: 2;
+} */
+
+/* Flex Grow will enable the flex item to grow  */
+
+/* .item-1{
+    
+}
+.item-2{
+    
+}
+.item-3{
+    
+} */
+/* .item-4{
+    flex-grow: 5;
+} */
+/* .item-5{
+    flex: 5;
+    flex-basis: 75%;
+    flex-basis: 700px;
+    flex-shrink: 0;
+} */
+ /* .item-10{ */
+    /* flex: 1; */
+ /* } */
