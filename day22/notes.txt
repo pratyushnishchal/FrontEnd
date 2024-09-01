@@ -1,0 +1,185 @@
+//wap to print the numbers from 1 to 10 and display whether the number is even or odd 
+let num=1
+while(num<=10){
+    if(num%2==0){
+        console.log("even number",num)
+    }
+    else{
+        console.log("its odd number",num)
+    }
+    num=num+1
+} 
+output 
+-------
+its odd number 1
+even number 2
+its odd number 3
+even number 4
+its odd number 5
+even number 6
+its odd number 7
+even number 8
+its odd number 9
+even number 10
+break and continue 
+------------------
+break--->terminate the loop 
+continue-->skip that iterations 
+
+#wap to check if i have a space it should break 
+
+//wap to check if i have a space it should break 
+const prompt=require("prompt-sync")()
+let s=prompt("enter the string")
+i=0 
+while(i<s.length){
+    if(s[i]==" "){
+        break
+    }
+    else{
+        console.log(s[i])
+    }
+    i=i+1
+} 
+
+ouput 
+-----
+
+//wap which takes both number and alphabet if it encounters number it should break  
+//wap which takes both number and alphabet if it encounters number it should break 
+// s="aksh1234"
+// i=0
+// while(i<s.length){
+//     if(!isNaN(s[i])){
+//        // console.log(s[i])
+//         break
+//     }
+//     else{
+//         console.log(s[i])
+//     }
+//     i=i+1
+// }
+s="aksh1234"
+for(let i=0;i<s.length;i++){
+    if(!isNaN(s[i])){
+               // console.log(s[i])
+                break
+            }
+            else{
+                console.log(s[i])
+            } 
+} 
+//wap where it should take the input continuosly untill you give zero.if you give zero it should terminate 
+// const prompt=require("prompt-sync")()
+// let num=parseInt(prompt("enter the number"))
+// while(true){
+//     if(num==0){
+//         break
+//     }
+//     else{
+//         num=parseInt(prompt("enter the number"))
+//     }
+// }
+ 
+ do while 
+ --------
+ what is the difference between do while and while?
+ while--->check logic whille be performed first 
+ do while-->action will be performed first
+ // let num=5
+// while(num<5){
+//     console.log(num)
+//     num=num+1
+// }
+let num=5
+do{
+    console.log(num)
+    num=num+1
+}while(num<5) 
+
+syntax:
+-------
+inilization 
+statement
+updateing the stmt 
+condition 
+
+do{
+    body of do while
+    incre/decremnt
+}while(condition) 
+
+//wap to check the muliplication of atable
+let i=1;
+let num=parseInt(prompt("enter the number"))
+do{
+    let res=num*i
+    console.log(res)
+    i=i+1
+}while(i<=10)
+
+#wap to check whether the given number is even or odd
+const prompt=require("prompt-sync")()
+let num=1
+do{
+if(num%2==0){
+    console.log(num,"even")
+}
+else{
+    console.log(num,"odd")
+}
+num=num+1
+}while(num<=10) 
+
+
+//wap where it should take the input continuosly untill you give zero.if you give zero it should terminate  
+//wap which takes both number and alphabet if it encounters number it should break  
+
+
+switch statements 
+-----------------
+switch(expression){
+    case value1:
+    stamt;
+    break;
+    case value2:
+    stamt;
+    break;
+    case value3:
+    stamt;
+    break;
+    case value4:
+    stamt;
+    break;
+    default:
+    stm;
+}
+
+code
+----
+let day="day" 
+switch(day){
+    case 'Monday':
+        console.log("its first day")
+        break;
+    case 'tuesday':
+        console.log("wow its tueday")
+        break;
+        case 'wednesday':
+            console.log("its first day")
+            break;
+            case 'friday':
+                console.log("its first day")
+                break;
+                case 'saturday':
+                    console.log("its first day")
+                    break;
+                    case 'sunday':
+                        console.log("its first day")
+                        break;
+    default:
+        console.log("eneter the proper day")
+}
+
+//wap to check traffice single 
+//wap using switch to perform arithmatic operation 
