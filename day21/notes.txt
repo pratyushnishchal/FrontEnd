@@ -1,0 +1,136 @@
+//wap where you list of values from 1 to 10
+//if you get any even number it should skip
+for(let i=1;i<=10;i++){
+    if(i%2==0){
+        console.log("skip")
+    }
+    else{
+console.log(i)
+    }
+}  
+
+//wap to display your names "Akshatha" 
+1)for of loop 
+strings,arrays,sets,maps 
+synatx:
+for (element of iterables){
+    body of for loop 
+}
+
+let s="Akshatha"
+for(let i=0;i<s.length;i++){
+    console.log(s[i])
+}
+// for(let a of s){
+//     console.log(a)
+// }
+
+iterables--->input 
+element--->for variables 
+2)for in loop 
+objects
+//iterate a given string 
+s=["apple","ball","cat"]
+s=["apple","ball","cat"]
+// for(let i=0;i<s.length;i++){
+//     console.log(s[i])
+//     for(let j=0;j<s[i].length;j++){
+//         console.log(s[i][j])
+//     }
+// }
+for(let i in s){
+    console.log(s[i])
+    for(let j in s[i])
+    {
+        console.log(s[i][j])
+    }
+}
+
+
+//wap take input string from user and skip if you have any vowels inside it.
+
+//wap take input string from user and skip if you have any vowels inside it.
+const prompt=require("prompt-sync")()
+let s=prompt("enter the string")
+for(let i=0;i<s.length;i++){
+    if((s[i]==='a')||(s[i]==='e')||(s[i]==='i')||(s[i]==='o')||(s[i]==='u')){
+        console.log(s[i],"vowel")
+    }
+    else{
+        console.log(s[i],"consonent")
+    }
+} 
+
+3)print objects use for in 
+syantx: 
+for(key in object){
+    for loop body
+}
+
+//wap to print salaries of people
+let emp={
+    sachine:25000,
+    pratyush:26500,
+    naresh:27000
+}
+console.table(emp)
+for(let x in emp){
+    // console.log(x)
+    salary=emp[x]
+    salary1=x+" "+salary
+    // console.log(x+" "+salary)
+    console.log(salary1)
+} 
+
+try with two nested object 
+let person={
+    name:{
+        first_name:{
+            f_name:'Akshatha',
+        },
+        last_name:{
+            l_name:'A'
+        }
+    }
+} 
+for(let a in person){
+    console.log(a)
+    // for (let j in a[person]){
+    //     console.log(a[person][j])
+    // }
+    for(let x in a){
+        console.log(a[x])
+    }
+}
+while 
+-----
+what is the difference between for and while ?
+for loop--when we know the number of iteration we will use for loop 
+while loo[--when we doent know the number of iteration thats when we are going to use while loop]
+infinite loop 
+
+synatx:
+step1:initialization 
+step2:condition 
+step3:display statement 
+step4:updateing increment/decrement 
+
+//wap to display the numbers from 1 to 10
+let num=1
+while(num<=10){
+    console.log(num)
+    num=num+1
+} 
+
+output 
+------
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
