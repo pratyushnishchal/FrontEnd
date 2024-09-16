@@ -1,0 +1,201 @@
+string 
+------
+what is string?
+--its a squence of characters single or double or mark method 
+-'a'
+-"a" 
+or 
+name="excelr"
+`${excelr}` --->mark
+
+a='akshatha'
+a1="akshatha"
+a3="akshatha"
+console.log(a)
+console.log(a1)
+console.log(`my name is ${a3}`)
+
+output 
+-------
+akshatha
+akshatha
+my name is akshatha  
+
+how can we access a string 
+--------------------------
+1)index 
+2)charAt()
+3)length 
+let a="akshatha"
+console.log(a.length)
+//i want to get h 
+console.log(a[3])
+console.log(a.charAt(3))
+--only positive index is allowed in string and no negative index 
+
+1)concate 
+2)toupper
+3)tolower 
+4)trim 
+
+let a="1",b="2"
+console.log("concate",a+b)
+res=a.concat(b)
+console.log(res) 
+
+//tolower--it converts uppercase to lowercase 
+let x="EXCELR"
+console.log(x)
+console.log("tolower",x.toLowerCase())
+//toupper--it converts lowercase to uppercase
+let Y="excelr"
+console.log(Y)
+console.log("toupper",Y.toUpperCase()) 
+
+
+//trim-->it will remove the unwanted spaces 
+let s3="        your guys are too boring"
+console.log(s3)
+let res1=s3.trim()
+console.log(res1) 
+
+//split-->it will convert into array
+let res3=s3.split()
+console.log("split",res3) 
+
+//slice -->it will grap a piece of code
+let s4="your guys are too boring"
+let res4=s4.slice(9,13)
+console.log("slice",res4) 
+
+//
+let s5="hey 'would you like to have coffe' "
+//let s6="hey "would you like to have coffe" "-->invalid
+
+//\n 
+console.log("hey i work\nexcelr")
+//\t
+console.log("hey i work\texcelr") 
+let str="she said,\"i am here.\""
+console.log(str)
+
+//wap take a user input and convert that three inputs into array 
+//try to reverse again string 
+let s2='akshatha'
+let revstr=""
+for(let i=s2.length-1;i>=0;i--){
+    revstr=revstr+s2.charAt(i)
+}
+console.log(revstr) 
+
+array
+-----
+what is array?
+--A collection of different types of data 
+why do we need array?
+let a="apple" 
+let b="banana" 
+or 
+let arr=['apple','banana']
+how to define?
+let arr=[]
+
+or new Array()
+let a=[1,2,3,4,5]
+console.log(a)
+console.log(typeof(a))
+let b=new Array('a','b')
+console.log(b)
+console.log(typeof(b)) 
+
+ouput 
+-----
+[ 1, 2, 3, 4, 5 ]
+object
+[ 'a', 'b' ]
+object 
+
+Access the array 
+------------------
+1)index 
+    1)positive--possible 
+    2)negative --not possible
+let a=[1,2,3,4]
+console.log(a.length)
+console.log(a[2])
+console.log(a[-2]) 
+
+1)mutable 
+add 
+removed 
+changed/editable 
+//add
+//two method
+//1)push -add the element at the last 
+//2)unshift --add the element at the begining 
+a=[1,2,3,4,5]
+let res=a.push('akshatha')
+console.log("push",a)
+let res1=a.unshift('excelr')
+console.log("unshift",a)
+
+//remove
+//pop-->remove from last
+//shift-->it will remove from first 
+let res2=a.pop()
+console.log("pop",a)
+
+let res3=a.shift()
+console.log("shift",a) 
+
+//replace the particular element
+let a1=[1,2,3,4,5]
+console.log(a1)
+a1[1]="excelr"
+console.log(a1) 
+
+ouput 
+-----
+push [ 1, 2, 3, 4, 5, 'akshatha' ]
+unshift [ 'excelr', 1, 2, 3, 4, 5, 'akshatha' ]
+pop [ 'excelr', 1, 2, 3, 4, 5 ]
+shift [ 1, 2, 3, 4, 5 ]
+[ 1, 2, 3, 4, 5 ]
+[ 1, 'excelr', 3, 4, 5 ]
+PS C:\Batch3\Javascript\c 
+
+multidimenisal array 
+---------------------
+--array inside array 
+//method1 
+let a1=[1,2,3]
+let a2=[4,5,6]
+let a3=[7,8,9]
+let arr=[a1,a2,a3]
+console.log(arr) 
+//method2 
+let arr1=[
+    ['a','b','c'],
+    ['1,2,3'],
+    [10,20,30]
+]
+console.log(arr1)  
+output 
+------
+[ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+[ [ 'a', 'b', 'c' ], [ '1,2,3' ], [ 10, 20, 30 ] ] 
+
+console.log(arr1[2][2])
+console.log(arr1[1][1]) 
+output 
+------
+30
+2  
+
+//create 5 dimenal array and access the exact middle element
+//take a 5 user inputs and convert that into mullti deminal array 
+//try all methods which we tried on dimensinal for two dimensinal
+//add three contacts to the contact array and display all the contacts in the list and search the contact in the array for the namev "akshatha" and display the result if its matching or not 
+
+dom 
+---
