@@ -1,0 +1,175 @@
+//wap to search for a given digit in a string 
+text="there are 3 cats" 
+pat=/\d/
+let res=text.search(pat)
+console.log(res) 
+
+output 
+------
+PS C:\Batch3\Javascript\class12> node a.js
+-1
+PS C:\Batch3\Javascript\class12> node a.js
+10
+
+1)exec()
+question1:use exce() to extract the first occurence of "apple" from the string 
+let s="apple banana apple orange" 
+
+//question1:use exce() to extract the first occurence of "apple" from the string 
+let s="apple banana apple orange"
+let pat=/apple/
+let res=pat.exec(s)
+console.log(res)
+
+//question2:extract digit from the string using exec() 
+let s1="order number is:123456"
+let pat1=/\d/
+let re1=pat1.exec(s1)
+console.log(re1) 
+
+//question3:use exec() to find the first occurence of a word starting with 't'
+let s2="time files like an arrow"
+let pat3=/\bt\w+/
+let r=pat3.exec(s2)
+console.log(r) 
+
+ //question4:use exce() with a capturing group to extract a word followed by a number 
+ let s11="item 42 is on sale" 
+ let pat11=/([A-Za-z]+)\s([0-9]+)/
+ let r1=pat11.exec(s11)
+ console.log(r1)
+
+ //question5:extract multiple matches from the string using a while loop 
+ const s12="123 456 789"
+ 
+
+ //question6:to extract a first word in a sentance 
+ const s13="javascript is awesome"
+
+
+ output 
+ ------
+ [
+  'apple',
+  index: 0,
+  input: 'apple banana apple orange',
+  groups: undefined
+]
+[ '1', index: 16, input: 'order number is:123456', groups: undefined ]
+[
+  'time',
+  index: 0,
+  input: 'time files like an arrow',
+  groups: undefined
+]
+[
+  'item 42',
+  'item',
+  '42',
+  index: 0,
+  input: 'item 42 is on sale',
+  groups: undefined
+]
+PS C:\Batch3\Javascript\class12>  
+
+test
+----
+---
+//searching the phone number patteren exec()
+let n="555 123-4567"
+let p=/(\d{3})\D(\d{3})-(\d{4})/
+let s1=/((?<first>\d{3})\D(?<second>\d{3})-(?<third>\d{4}))/
+let s11=s1.exec(n)
+console.log(s11)
+let r=p.exec(n)
+console.log(r)
+//question1:use test() to check if the string conatins the word "hello"
+let s="hello world"
+let pat=/world1/
+let res=pat.test(s)
+console.log(res) 
+
+//question2:use test to check if the string starts with a captial letter and small letters
+s="hello,how are you?"
+
+
+//question3:use test() to check if the string conatins a valid email address format 
+
+//match
+--------
+//question1:use match() to find all occurences of word "cat" in the string 
+const s="cat bat cat rat"
+pat=/cat/
+let res=s.match(pat)
+console.log(res) 
+
+//program to validate the phone number 
+
+//program to validate the email adress  
+
+
+matchall()
+----------
+// //question1:use all matchall() to find all occurrences of "dog" in the string
+const s="dog cat dog"
+let pat=/dog/g
+let res=[...s.matchAll(pat)]
+console.log(res)
+// string definition
+// const sentence = "JavaScript1JavaScript2";
+
+// // a pattern having 'JavaScript' followed by a digit
+// const regex = /JavaScript\d/g;
+
+// // finding matches in the string for the given regular expression
+// let results = sentence.matchAll(regex);
+
+// // looping through the iterator
+// for (result of results) {
+//   console.log(result);
+// }
+
+// // Output:
+// // ["JavaScript1", index: 0, input: "JavaScript1JavaScript2", groups: undefined]
+// // ["JavaScript2", index: 11, input: "JavaScript1JavaScript2", groups: undefined] 
+
+//question 2:use matchall() with capturing groups to extract words followed by numbers 
+const s1="item 42 and item 99"
+let pat1=/\b\w+\d+/g
+let res1=[...s1.matchAll(pat1)]
+console.log(res1)
+ 
+//search 
+//question1:use search() to find the position of first vowel in the string 
+let s11="sky is blue"
+let p1=/[aeiou]/
+let r=s11.search(p1)
+console.log(r) 
+
+//replace() 
+//question1:use replace() to replace all occurence of "cat" with "dog" in the string 
+let s15="cat bat car rat"
+//replace("existing word","changed")
+let r1=s15.replace('cat',"dog")
+console.log(r1)
+
+//split()
+//question1:use split() to split the string by digits 
+let s13="a1b2c3dd"
+let p11=/\d/
+let r15=s13.split(p11)
+console.log(r15)
+
+ouput 
+-----
+[
+  [ 'dog', index: 0, input: 'dog cat dog', groups: undefined ],
+  [ 'dog', index: 8, input: 'dog cat dog', groups: undefined ]
+]
+[
+  [ '42', index: 5, input: 'item 42 and item 99', groups: undefined ],
+  [ '99', index: 17, input: 'item 42 and item 99', groups: undefined ]
+]
+4
+dog bat car rat
+[ 'a', 'b', 'c', 'dd' ]
