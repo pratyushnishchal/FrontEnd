@@ -1,0 +1,122 @@
+//add three contacts to the contacts array 
+//display all contacts in the list 
+//search for contacts with the name containing "Akshatha"
+//display the results 
+//add three contacts to the contacts array 
+const prompt=require("prompt-sync")()
+let contacts=[]
+contacts.push({'name':'Akshatha','ph_no':1234567890,'email':'a@gmail.com'})
+contacts.push({'name':'Prathush','ph_no':1234567890,'email':'p@gmail.com'})
+contacts.push({'name':'sai','ph_no':1234567890,'email':'sai@gmail.com'})
+contacts.push({'name':'karthik','ph_no':1234567890,'email':'k@gmail.com'})
+//display all contacts in the list 
+//console.log(contacts)
+console.log("contact list")
+for(let i=0;i<contacts.length;i++){
+    contact=contacts[i]
+    console.log(`name:${contact.name} \n\t ph_no:${contact.ph_no} \n\t email:${contact.email}`)
+}
+//search for contacts with the name containing "Akshatha"
+let s_name=prompt("enter the name to be searched")
+found_name=[]
+console.log(`the contact that we need to search is ${s_name}`)
+for(let j=0;j<contacts.length;j++){
+    c=contacts[j]
+    if(c.name.toLowerCase().includes(s_name.toLowerCase())){
+        found_name.push(c)
+    }
+}
+if(found_name.length>0){
+    console.log("search result")
+    for(let i=0;i<found_name.length;i++){
+        c1=found_name[i]
+        console.log(`${c1.name} \n\t ${c1.ph_no} \n\t ${c1.email}`)
+    }
+}
+else{
+    console.log("contact is not found")
+}
+//display the results 
+ 
+output 
+-------
+contact list
+name:Akshatha 
+
+         ph_no:1234567890 
+         email:a@gmail.com
+name:Prathush 
+         ph_no:1234567890
+         email:p@gmail.com
+name:sai
+         ph_no:1234567890
+         email:sai@gmail.com
+name:karthik
+         ph_no:1234567890
+         email:k@gmail.com
+enter the name to be searchedakshatha     
+the contact that we need to search is akshatha
+search result
+Akshatha
+         1234567890
+         a@gmail.com
+PS C:\Batch3\Javascript\class10> 
+
+DOM 
+----
+-Document object model 
+what is dom ?
+--it is hierarical strustrue of html document 
+--every element --->node 
+
+why do we need this ?
+--it will be very easy for server to analyze
+where do we use it ?
+Dom types 
+----------
+1)real/server DOM 
+2)client dom 
+3)virtual dom
+--wap to display tow p tags in console
+a.html 
+------
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatum tenetur iure voluptatem, dolorem placeat tempora architecto aspernatur excepturi voluptates libero ab nostrum dolorum aliquid asperiores at? Eligendi, architecto ullam.</p>
+    <script>
+        let a=document.getElementById("demo").innerHTML
+        console.log(a)
+    </script>
+</body>
+</html> 
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatum tenetur iure voluptatem, dolorem placeat tempora architecto aspernatur excepturi voluptates libero ab nostrum dolorum aliquid asperiores at? Eligendi, architecto ullam.</p>
+    <p id="demo1">hello</p>
+    <script>
+        // let a=document.getElementById("demo").innerHTML
+        // console.log(a)
+        let a=document.getElementsByTagName("p")[1].innerHTML
+        console.log(a)
+        document.body.style.backgroundColor="green"
+        document.getElementById("demo1").style.color="cyan"
+    </script>
+</body>
+</html> 
+event handling 
+--------------- 
+1)onclick() 
+//create a form and try to get all the information that you give in form on the screen (5 data)
+//wap to display the color choose by the user and that color should change it hads the the default one  
