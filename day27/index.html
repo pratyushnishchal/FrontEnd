@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validations</title>
+</head>
+<style>
+    body{
+        background-color: rgb(14, 224, 154);
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    input[type="button"]{
+        cursor: pointer;
+        background-color: rgb(166, 166, 219);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="text"], input[type="email"]{
+        border-radius: 5px;
+        padding: 15px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div class="form">
+    <form>
+        Email
+        <input type="email" id="em1" required><br><br>
+        User Id
+        <input type="text" id="uid" required><br><br>
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
+</div>
+    <p id="val"></p>
+    <script src="script.js"></script>
+</body>
+</html>
