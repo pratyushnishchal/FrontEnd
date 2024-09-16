@@ -1,0 +1,198 @@
+storage 
+-------
+localstorage 
+------------
+--create a localstorage we have to use keyword called 'localstorage' 
+1)setitem('key','value')
+2)getitem('key')
+
+localstorage 
+---------------
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        localStorage.setItem('company_name','Excelr')
+        let a=localStorage.getItem('company_name')
+        console.log(a)
+        document.getElementById('demo').innerHTML=a
+    </script>
+</body>
+</html>  
+
+sessionstorage 
+-------------
+storage-4mb 
+code-html5 
+--keyword called 'sessionstorage' 
+1)setitem('key','value')--->
+2)getitem('key')
+3)removeitem()
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        sessionStorage.setItem('trainer_name','kranti')
+        let a=sessionStorage.getItem('trainer_name')
+        console.log(a)
+        document.getElementById('demo').innerHTML=a
+    </script>
+</body>
+</html> 
+
+#wap using session storage where you should get the details of student like student_name,course_name,place_name it shouldbe storaged on sessionStorage and display the same in browser. 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let obj1={'s_name':'karthik','course':'fullstack','place':'bangalore'}
+        sessionStorage.setItem('details', JSON.stringify(obj1))
+        let a=JSON.parse(sessionStorage.getItem('details'))
+        console.log(a)
+        let c=JSON.stringify(a)
+        document.getElementById('demo').innerHTML=c
+    </script>
+</body>
+</html> 
+
+
+cookies 
+-------
+--small file which communicates between browser and server 
+--user--->request--->server 
+server responds 
+document.cookies
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        document.cookie='name=akshatha'
+        let a=document.cookie
+        console.log(a)
+        document.cookie='place='
+        let c=document.cookie
+        console.log(c)
+    </script>
+</body>
+</html> 
+
+//wap create a form where data should go and sit in the cookies and bring that data back to browser  
+
+
+program 
+-------
+A set instruction 
+--how do we exceute this set of instruction 
+task1:as soon you write the program you will get the result
+function add(n1,n2){
+    return n1+n2
+}
+let res=add(1,2)
+console.log(res) 
+
+--synchrous program 
+task2:as soon you write the program will not be exceuted 
+--when ever you refere to external database or netwrok or server that program is asynchrous program 
+
+setTimeout()
+-------------
+--in built()
+--par1,par2 
+par1--->function 
+par2---->time solt in which it has to be exceuted
+
+function calldb(){
+setTimeout(()=>{
+    console.log("i am happy about todays class")
+},5000)
+
+}
+calldb() 
+
+output 
+----
+PS C:\Batch3\Javascript\class16> node a.js
+i am happy about todays class 
+
+
+function calldb(){
+setTimeout(console.log("hey"),5000)
+
+}
+calldb() 
+
+ouput 
+-----
+TypeError [ERR_INVALID_ARG_TYPE]: The "callback" argument must be of type function. Received undefined
+    at setTimeout (node:timers:143:3)
+    at calldb (C:\Batch3\Javascript\class16\a.js:2:1)
+    at Object.<anonymous> (C:\Batch3\Javascript\class16\a.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12)    
+    at node:internal/main/run_main_module:30:49 {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v22.2.0
+
+function calldb(){
+setTimeout(()=>{
+    console.log("i am happy about todays class")
+},5000)
+
+}
+let a=calldb()
+console.log(a) 
+
+output 
+------
+undefined
+i am happy about todays class 
+
+
+what is eventloop ?
+what is thread ?
+--a single unit of program 
+-how will excute the code ?
+--processor 
+function calldb(p){
+setTimeout(()=>{
+    console.log("i am happy about todays class")
+},5000)
+
+}
+let a=function(data){
+    console.log(data)
+}
+let res=calldb(a)
+ 
+//wap to print even number immediatly and take 2sce to print odd numbers using callback function 
+
+//create one text file and use callback to print that data using js file 
+
+//take an input from user for strings and if that string as captical letter wait for 4sec use callback functions  
+
