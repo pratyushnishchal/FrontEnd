@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #313440;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    h1 {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+        color: #060e47;
+        text-decoration: underline;
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    form {
+        padding: 30px;
+        border-radius: 10px;
+        width: 450px;
+        background-color: rgb(74, 80, 148);
+        /* margin-top: 140px; */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="password"] {
+        border-radius: 15px;
+        border: none;
+        padding: 5px;
+        width: 100%;
+        height: 30px;
+
+    }
+
+    input:focus {
+        outline: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    ::placeholder {
+        font-size: medium;
+        text-transform: capitalize;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    input[type="button"] {
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgb(178, 195, 204);
+        border-radius: 10px;
+        border: none;
+        width: 50%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        color: #1191ed;
+        font-size: 1.2rem;
+    }
+
+    input[type="button"]:hover {
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgb(16, 113, 165);
+        border-radius: 10px;
+        border: none;
+        width: 50%;
+        transition: 0.5s;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    label {
+        color: aliceblue;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    #display {
+        padding: 30px;
+        border-radius: 10px;
+        width: 450px;
+        background-color: rgba(74, 80, 148, 0.235);
+        color: white;
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <form>
+            <label for="name1">Name</label>
+            <input type="text" id="name1" placeholder="Enter Name"><br><br>
+            <label for="age1">Age</label>
+            <input type="number" id="age1" placeholder="Enter Age"><br><br>
+            <label for="email1">Email</label>
+            <input type="email" id="email1" placeholder="Enter Email"><br><br>
+            <center><input type="button" value="Submit" onclick="sub()"></center>
+        </form>
+        <br>
+        <div id="display">
+
+            <h4 id="disname"></h4>
+            <h4 id="disage"></h4>
+            <h4 id="disemail"></h4>
+        </div>
+    </div>
+    <script>
+        function sub() {
+
+            let name = document.getElementById("name1").value
+            let age = document.getElementById("age1").value
+            let email = document.getElementById("email1").value
+
+            class Student {
+                constructor(name, age, email) {
+                    this.name = name;
+                    this.age = age
+                    this.email = email
+                }
+                displayMess() {
+
+                    document.getElementById("disname").innerHTML = `Name of the Student is <b>${this.name}</b>`
+                    document.getElementById("disage").innerHTML = `Age of Student is <b>${this.age}</b>`
+                    document.getElementById("disemail").innerHTML = `Student Email id is <b>${this.email}</b>`
+                    // console.log(`Name of the Student is ${this.name} age of student is ${this.age} and email id of student is ${this.email}`)
+                }
+            }
+            let s = new Student(name, age, email);
+            s.displayMess()
+            document.getElementById("display").style.display = "block"
+
+        }
+    </script>
+</body>
+
+</html>

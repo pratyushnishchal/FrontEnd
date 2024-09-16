@@ -1,0 +1,233 @@
+oops 
+-----
+object,function constructor 
+// //prototype 
+// function person(name,age){
+//     this.name=name,
+//     this.age=age
+//     this.greet=function(){
+//         console.log("welcome",this.name)
+//     }
+// }
+// let p1=new person('Akshatha',29)
+// p1.greet()
+// person.prototype.displayage=function(){
+//     console.log("hey is this your age",this.age)
+// }
+// p1.displayage()
+
+
+//protype chaining or inhertance 
+function supertype(){
+    this.name='Akshatha',
+    this.displayname=function(){
+        console.log("hey my name is:",this.name)
+    }
+}
+
+function subclass(){
+    this.age=29
+}
+subclass.prototype=new supertype()
+subclass.prototype.displayage=function(){
+    console.log("hey this is my age:",this.age)
+}
+let p1=new subclass()
+console.log(p1.name)
+p1.displayname()
+//console.log(p1.displayname())
+p1.displayage() 
+
+//wap to print an object with one method inside and another method external 
+//wap for function constructor with one ,method internal and another method external 
+//wap for protype chaning for designing car and using the class
+
+--object 
+--function constructor 
+--class 
+A class is a blue print of object 
+
+method1: 
+--------
+class Classname{
+    constructor(height,weight){
+        this.height=height 
+        this.width=width 
+    }
+    displayname(){
+        console.log(this.height)
+    }
+} 
+
+method2: 
+--------
+class expression 
+----------------
+let classname=class{
+    constructor(height,width){
+        this.height=height
+        this.width=width
+    }
+}
+
+//using class 
+class supertype{
+    constructor(){
+        this.name='Akshatha'
+    }
+    displayname(){
+        console.log("hey my name is:",this.name)
+    }
+}
+
+class subclass extends supertype{
+    constructor(){
+        super()
+        this.age=29
+    }
+    displayage(){
+        console.log("age is",this.age)
+    }
+} 
+let s1=new subclass()
+s1.displayname()
+s1.displayage() 
+
+output 
+------
+PS C:\Batch3\Javascript\class14> node a.js
+C:\Batch3\Javascript\class14\a.js:35
+        this.age=29
+        ^
+
+ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor
+    at new subclass (C:\Batch3\Javascript\class14\a.js:35:9)
+    at Object.<anonymous> (C:\Batch3\Javascript\class14\a.js:41:8)
+    at Module._compile (node:internal/modules/cjs/loader:1434:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1518:10)
+    at Module.load (node:internal/modules/cjs/loader:1249:32)
+    at Module._load (node:internal/modules/cjs/loader:1065:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:158:12)
+    at node:internal/main/run_main_module:30:49
+
+Node.js v22.2.0
+PS C:\Batch3\Javascript\class14> node a.js
+hey my name is: Akshatha
+age is 29
+PS C:\Batch3\Javascript\class14> 
+
+// class Car{
+//     constructor(brand){
+//         this.carname=brand
+//     }
+//     parent(){
+//         console.log("i have a car"+this.carname)
+//     }
+// } 
+// class Model extends Car{
+//     constructor(model,brand){
+//         super(brand)
+//         this.model=model
+//     }
+//     show(){
+//         return this.model
+//     }
+// } 
+// mycar=new Model('Ford','mustang')
+// mycar.parent() 
+
+function Car(name){
+    this.name="wow"
+    this.parent=function(){
+        console.log("hey"+this.name)
+    }
+} 
+function Model(brand){
+
+   this.brand="a"
+} 
+Model.prototype=new Car()
+
+let c1=new Model()
+//console.log(c1.parent())
+//c1.show()
+c1.parent() 
+
+ouput 
+------
+PS C:\Batch3\Javascript\class14> node a.js
+undefined
+PS C:\Batch3\Javascript\class14> node a.js
+heyundefined
+PS C:\Batch3\Javascript\class14> node a.js
+heyundefined
+undefined
+PS C:\Batch3\Javascript\class14> node a.js
+heywow
+undefined
+PS C:\Batch3\Javascript\class14> node a.js
+heywow
+PS C:\Batch3\Javascript\class14>   
+
+//encapsulation 
+--it is bundling of data and the methods in a singel unit 
+//banking 
+password 
+bank 
+balance 
+
+
+customer 
+--withdraw 
+conditions 
+withdraw_amount<=balance 
+amount-- 
+--checking the balance 
+displaying the amount
+--deposit  
+amount++ 
+
+class Banking{
+    constructor(initialB){
+        this.balance=initialB
+    }
+    deposit(amount){
+        if(amount>0){
+            this.balance=this.balance+amount
+            console.log(this.balance)
+        }
+        else{
+            console.log("invalid deposit")
+        }
+    }
+    withdraw(amount){
+        if(amount>0 && amount<=this.balance){
+            this.balance=this.balance-amount
+            console.log(this.balance)
+            console.log("withdrawal is successfull")
+        }
+        else{
+            console.log("insuffienet balance")
+        }
+    }
+    getbalance(){
+        console.log(this.balance)
+    }
+}
+let obj1=new Banking(1000)
+//console.log(obj1.getbalance())
+obj1.getbalance()
+obj1.withdraw(200)
+obj1.getbalance() 
+obj1.deposit(1200)
+obj1.getbalance() 
+
+output
+------
+PS C:\Batch3\Javascript\class14> node a.js
+1000
+800
+withdrawal is successfull
+800
+2000
+2000
