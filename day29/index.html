@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nerko+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #313440;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    h1 {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+        color: #FFA700;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    form {
+        padding: 30px;
+        border-radius: 10px;
+        width: 450px;
+        background-color: rgb(74, 80, 148);
+        /* margin-top: 140px; */
+    }
+    input[type="email"],
+    input[type="password"] {
+        border-radius: 15px;
+        border: none;
+        padding: 5px;
+        width: 100%;
+        height: 30px;
+
+    }
+
+    input:focus {
+        outline: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    ::placeholder {
+        font-size: medium;
+        text-transform: capitalize;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    input[type="button"] {
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgb(178, 195, 204);
+        border-radius: 10px;
+        border: none;
+        width: 50%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        color: #1191ed;
+        font-size: 1.2rem;
+    }
+
+    input[type="button"]:hover {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #FFA700;
+        border-radius: 10px;
+        border: none;
+        width: 50%;
+        transition: 0.5s;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    label {
+        color: aliceblue;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .error {
+        color: #d60606;
+        font-size: medium;
+        font-weight: normal;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <form>
+            <center>
+                <img src="https://cdn.sanity.io/images/gxmub2ol/production/8a355bd75a5eee73ec4b9e94a9c2cdf66f6bbbc1-1670x500.png" width="250px">
+                <!-- <h1>Login</h1> -->
+            </center>
+            <label for="email">Email</label><br><br>
+            <input type="email" id="email" placeholder="Enter Email" required><br>
+            <span id="emailerror" class="error"></span><br>
+            <label for="password">Password</label><br><br>
+            <input type="password" id="pass" placeholder="Enter password"><br>
+            <span id="passworderror" class="error"></span><br>
+            <br><br>
+            <center>
+                <input type="button" value="Submit" onclick="validateForm()">
+            </center>
+        </form>
+    </div>
+    <script>
+
+
+        function validateForm() {
+            let pass = document.getElementById("pass").value
+            let email = document.getElementById("email").value
+
+            let emailVal = /^[A-Za-z_.0-9]{3,}@[A-Za-z]{3,}[.][A-Za-z.]{2,6}$/
+            let passwordVal = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/
+            // Email Validation
+            if (emailVal.test(email)) {
+                document.getElementById("emailerror").innerHTML = " "
+            }
+            else if (email == "") {
+                document.getElementById("emailerror").innerHTML = "Email id field cannot be empty"
+            }
+            else {
+                document.getElementById("emailerror").innerHTML = "Email id is invalid"
+            }
+            // password validation
+            if (passwordVal.test(pass)) {
+                document.getElementById("passworderror").innerHTML = " "
+            }
+            else if (pass.length == 0) {
+                document.getElementById("passworderror").innerHTML = "Password field is empty"
+            }
+            else if (pass.length <= 8 || pass.length >= 16) {
+                document.getElementById("passworderror").innerHTML = "Password length should be 8-16 characters"
+            }
+            else {
+                document.getElementById("passworderror").innerHTML = "Invalid password, Your password must contain atleast 1 digit, ateast 1 special character"
+            }
+            if(passwordVal.test(pass) && emailVal.test(email)){
+                window.location.href="swiggy.html"
+            }
+        }
+    </script>
+</body>
+
+</html>
