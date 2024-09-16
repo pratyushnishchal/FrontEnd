@@ -1,0 +1,172 @@
+//encapsulation 
+// class Banking{
+//     constructor(initialB){
+//         this.balance=initialB
+//     }
+//     deposit(amount){
+//         if(amount>0){
+//             this.balance=this.balance+amount
+//             console.log(this.balance)
+//         }
+//         else{
+//             console.log("invalid deposit")
+//         }
+//     }
+//     withdraw(amount){
+//         if(amount>0 && amount<=this.balance){
+//             this.balance=this.balance-amount
+//             console.log(this.balance)
+//             console.log("withdrawal is successfull")
+//         }
+//         else{
+//             console.log("insuffienet balance")
+//         }
+//     }
+//     getbalance(){
+//         console.log(this.balance)
+//     }
+// }
+// let obj1=new Banking(1000)
+// //console.log(obj1.getbalance())
+// obj1.getbalance()
+// obj1.withdraw(200)
+// obj1.getbalance() 
+// obj1.deposit(1200)
+// obj1.getbalance() 
+function Banking(initialB){
+    balance=initialB
+
+this.deposit=function(amount){
+    if(amount>0){
+        balance=balance+amount
+        console.log("after despoit the amount deposited is:",balance)
+    }
+    else{
+        console.log("sorry invalid deposit")
+    }
+}
+this.widthdraw=function(amount){
+    if(amount>0 && amount<balance){
+        balance=balance -amount
+        console.log("after withdarw the amount is the account is:",balance)
+
+    }
+    else{
+        console.log("insuffient balance")
+    }
+
+}
+this.getbalance=function(){
+     console.log("the current balance in the account is:",balance)
+   // return balance
+}
+} 
+let akshatha=new Banking(12000)
+//console.log(akshatha.getbalance())
+akshatha.getbalance() 
+akshatha.widthdraw(3000)
+akshatha.deposit(100000)
+
+Abstraction 
+-----------
+--we are hide details and show only the essential data to the customer 
+
+//employee salary 
+function Employee(name,age,basesalary){
+    this.name=name
+    this.age=age 
+    this.basesalary=basesalary 
+    let monthlybonus=3000
+    let  calculatesalary=function(){
+        let finalsalary=basesalary+monthlybonus
+        console.log(`the ${name} salary is ${finalsalary}`)
+    }
+    this.getED=function(){
+        console.log(`Employee name is ${this.name} and Employee age is ${this.age}`)
+        calculatesalary()
+    }
+   
+} 
+let Akshata=new Employee('Akshatha',30,45000)
+Akshata.getED()
+//obj1.calculatesalary() 
+
+output 
+-------
+PS C:\Batch3\Javascript\class15> node a.js
+Employee name is Akshatha and Employee age is 30
+the Akshatha salary is 48000 
+
+
+polymorphism 
+------------
+class  
+// function Employee(name,age,basesalary){
+//     this.name=name
+//     this.age=age 
+//     this.basesalary=basesalary 
+//     let monthlybonus=3000
+//     let  calculatesalary=function(){
+//         let finalsalary=basesalary+monthlybonus
+//         console.log(`the ${name} salary is ${finalsalary}`)
+//     }
+//     this.getED=function(){
+//         console.log(`Employee name is ${this.name} and Employee age is ${this.age}`)
+//         calculatesalary()
+//     }
+   
+// } 
+// let Akshata=new Employee('Akshatha',30,45000)
+// Akshata.getED() 
+
+class Animal{
+    constructor(name){
+        this.name=name
+    }
+    eat(){
+        console.log(`${this.name} is eatting`)
+    }
+} 
+class alligator extends Animal{
+    constructor(name,age){
+        super(name)
+    }
+   
+    eat(){
+        super.eat()
+        console.log(`${this.name} is drinking`)
+    }
+} 
+let obj1=new alligator('waw',12)
+obj1.eat()
+
+//wap for hosp management for a different deparment (poly,inheritance)  
+
+storage 
+--------
+browser 
+-------
+-differnt type of browser 
+1)microsoft edge 
+2)google chrom 
+3)opera 
+4)brave 
+5)firefox 
+6)duck duck 
+
+1)local storage 
+2)session 
+3)cookies  
+
+1)local storgae 
+stoage capaity-10mb 
+tag--html5 
+accible-windows 
+expries-never 
+stoage location-browser 
+--we cant send q request to browser  
+setitem(key,value)
+getitem("key")
+
+//wap to create form and storage the data in local storage and show me 
+2) 
