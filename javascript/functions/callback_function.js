@@ -1,3 +1,4 @@
+// A callback function is a function that you pass as an argument to another function. It gets executed after a certain task is completed.
 console.log("We are learning callback function")
 
 const printHello=()=>{

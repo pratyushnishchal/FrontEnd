@@ -1,3 +1,5 @@
+// When the function body has only a single statement, you can omit
+// the curly braces and the return keyword:
 console.log("we are learning arrow function")
 
 function print(){
